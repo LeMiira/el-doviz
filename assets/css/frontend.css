@@ -1,0 +1,156 @@
+/* Frontend CSS for El Doviz plugin */
+
+/* General container */
+.el-doviz-exchange-rates,
+.el-doviz-header-ticker,
+.el-doviz-footer-ticker,
+.el-doviz-elementor-list,
+.el-doviz-elementor-grid {
+    font-family: "Inter", Helvetica, Arial, sans-serif;
+    line-height: 1.4;
+    color: var(--el-doviz-text-color, #222);
+    margin: 0;
+    padding: 0;
+}
+
+/* Light/Dark themes */
+:root {
+    --el-doviz-bg-light: #ffffff;
+    --el-doviz-bg-dark: #1a1a1a;
+    --el-doviz-text-light: #222222;
+    --el-doviz-text-dark: #f0f0f0;
+}
+[data-theme="dark"] {
+    background-color: var(--el-doviz-bg-dark);
+    color: var(--el-doviz-text-dark);
+}
+[data-theme="light"] {
+    background-color: var(--el-doviz-bg-light);
+    color: var(--el-doviz-text-light);
+}
+
+/* Header/Footer ticker list */
+.el-doviz-header-ticker,
+.el-doviz-footer-ticker {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    flex-wrap: wrap;
+}
+.el-doviz-header-ticker li,
+.el-doviz-footer-ticker li {
+    display: inline-block;
+}
+
+/* Elementor list */
+.el-doviz-elementor-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.el-doviz-elementor-list li {
+    margin-bottom: 0.5rem;
+}
+
+/* Elementor grid */
+.el-doviz-elementor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 0.75rem;
+}
+.el-doviz-elementor-grid .grid-item {
+    background: rgba(0,0,0,0.05);
+    padding: 0.5rem;
+    text-align: center;
+    border-radius: 4px;
+}
+
+/* Live ticker */
+.el-doviz-ticker {
+    overflow: hidden;
+    white-space: nowrap;
+    font-weight: 600;
+}
+.el-doviz-ticker span {
+    display: inline-block;
+    padding-right: 2rem;
+    animation: el-doviz-scroll 20s linear infinite;
+}
+@keyframes el-doviz-scroll {
+    0% { transform: translateX(100%); }
+    100% { transform: translateX(-100%); }
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .el-doviz-elementor-grid {
+        grid-template-columns: 1fr;
+    }
+    .el-doviz-header-ticker,
+    .el-doviz-footer-ticker {
+        flex-direction: column;
+    }
+}
+
+/* Custom & Elementor containers styling */
+.el-doviz-el-container {
+    padding: 15px;
+    border-radius: 8px;
+    background-color: var(--el-doviz-bg, #f8f9fa);
+    border: 1px solid rgba(0, 0, 0, 0.08);
+}
+.el-doviz-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 12px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+.el-doviz-item:last-child {
+    border-bottom: none;
+}
+.el-doviz-label {
+    font-weight: 600;
+    color: var(--el-doviz-primary, #C41E3A);
+}
+.el-doviz-val {
+    font-family: monospace;
+    font-weight: bold;
+}
+
+/* Grid layout overrides */
+.el-doviz-el-container.el-doviz-elementor-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 0.75rem;
+}
+.el-doviz-el-container.el-doviz-elementor-grid .el-doviz-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    padding: 10px;
+    gap: 4px;
+}
+.el-doviz-el-container.el-doviz-elementor-grid .el-doviz-label {
+    display: inline-block;
+    margin-bottom: 0;
+}
+.el-doviz-el-container.el-doviz-elementor-grid .el-doviz-val {
+    display: inline-block;
+}
+
+/* Privacy & KVKK container */
+.el-doviz-privacy-container {
+    padding: 15px;
+    border-radius: 6px;
+    background: rgba(0, 0, 0, 0.02);
+    border-left: 4px solid var(--el-doviz-primary, #C41E3A);
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: #555;
+}
+

@@ -1,0 +1,28 @@
+{
+    "apiVersion": 3,
+    "name": "el-doviz/exchange-rates",
+    "title": "Exchange Rates",
+    "category": "widgets",
+    "icon": "chart-line",
+    "description": "Displays selected Turkish exchange rates.",
+    "supports": {
+        "html": false
+    },
+    "attributes": {
+        "currencies": {
+            "type": "string",
+            "default": "usd,eur,gbp"
+        },
+        "layout": {
+            "type": "string",
+            "default": "list"
+        },
+        "theme": {
+            "type": "string",
+            "default": "auto"
+        }
+    },
+    "editorScript": "file:./index.js",
+    "style": "file:./style.css",
+    "render": "file:./render.php"
+}

@@ -1,0 +1,24 @@
+{
+    "apiVersion": 3,
+    "name": "el-doviz/ticker",
+    "title": "Live Ticker",
+    "category": "widgets",
+    "icon": "editor-code",
+    "description": "Displays a scrolling live ticker of selected rates.",
+    "supports": {
+        "html": false
+    },
+    "attributes": {
+        "currencies": {
+            "type": "string",
+            "default": "usd,eur,gbp"
+        },
+        "speed": {
+            "type": "number",
+            "default": 5000
+        }
+    },
+    "editorScript": "file:./index.js",
+    "style": "file:./style.css",
+    "render": "file:./render.php"
+}
