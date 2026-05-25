@@ -284,8 +284,7 @@ class Settings {
             echo '<h2>' . esc_html__( 'Geliştirici Filtreleri (Filters)', 'el-doviz' ) . '</h2>';
             echo '<p>' . esc_html__( 'Yazılımcılar ve temalar için sunulan kanca (filter) kütüphanesi:', 'el-doviz' ) . '</p>';
             echo '<ul style="list-style: disc; padding-left: 20px;">';
-            echo '<li><code>el_doviz_tcmb_url</code>: ' . esc_html__( 'TCMB XML veri kaynağı adresini değiştirmek için kullanılır.', 'el-doviz' ) . '</li>';
-            echo '<li><code>el_doviz_bist_url</code>: ' . esc_html__( 'BIST 100 API veri kaynağı adresini değiştirmek için kullanılır.', 'el-doviz' ) . '</li>';
+            echo '<li><code>el_doviz_api_endpoints</code>: ' . esc_html__( 'TCMB ve BIST 100 API veri kaynağı adreslerini değiştirmek için kullanılır.', 'el-doviz' ) . '</li>';
             echo '</ul>';
             echo '</div>';
 

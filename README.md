@@ -72,14 +72,10 @@ Available under the **El Döviz** category in the Elementor sidebar:
 For advanced users, filter parameters dynamically:
 
 ```php
-// Customize the TCMB endpoint URL
-add_filter( 'el_doviz_tcmb_url', function( $url ) {
-    return 'https://your-fallback-source.com/xml';
-} );
-
-// Conditionally enqueue frontend assets
-add_filter( 'el_doviz_enqueue_assets', function( $should_enqueue ) {
-    return is_front_page() ? true : $should_enqueue;
+// Customize API endpoints (e.g. TCMB XML URL and BIST Hurriyet endpoint)
+add_filter( 'el_doviz_api_endpoints', function( $endpoints ) {
+    $endpoints['tcmb'] = 'https://your-fallback-source.com/xml';
+    return $endpoints;
 } );
 ```
 
