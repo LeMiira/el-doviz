@@ -125,6 +125,101 @@ class Settings {
         echo '<div class="wrap">';
         echo '<h1>' . esc_html__( 'El Döviz Kontrol Paneli', 'el-doviz' ) . '</h1>';
 
+        // Styling for layout and support cards
+        echo '<style>
+            .el-doviz-dashboard-layout {
+                display: flex;
+                flex-wrap: wrap;
+                gap: 20px;
+                max-width: 1200px;
+                margin-top: 20px;
+                align-items: flex-start;
+            }
+            .el-doviz-main-column {
+                flex: 3;
+                min-width: 320px;
+            }
+            .el-doviz-sidebar-column {
+                flex: 1;
+                min-width: 280px;
+                max-width: 360px;
+            }
+            .el-doviz-sidebar-card {
+                background: #fff;
+                border: 1px solid #ccd0d4;
+                border-top: 4px solid #C41E3A;
+                padding: 20px;
+                border-radius: 4px;
+                box-shadow: 0 1px 1px rgba(0,0,0,.04);
+                margin-bottom: 20px;
+                transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+            .el-doviz-sidebar-card:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+            }
+            .el-doviz-sidebar-card h3 {
+                margin-top: 0;
+                margin-bottom: 12px;
+                color: #23282d;
+                font-size: 1.1rem;
+                font-weight: 600;
+            }
+            .el-doviz-sidebar-card p {
+                color: #555d66;
+                font-size: 0.9rem;
+                line-height: 1.5;
+                margin-bottom: 15px;
+            }
+            .el-doviz-btn-group {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+            .el-doviz-btn {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                padding: 10px 16px;
+                border-radius: 4px;
+                font-weight: 600;
+                font-size: 0.9rem;
+                text-decoration: none !important;
+                transition: all 0.2s ease-in-out;
+                box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+            }
+            .el-doviz-btn-github {
+                background: #24292e;
+                color: #fff !important;
+            }
+            .el-doviz-btn-github:hover {
+                background: #1b1f23;
+                transform: translateY(-1px);
+                box-shadow: 0 4px 6px rgba(36, 41, 46, 0.15);
+            }
+            .el-doviz-btn-coffee {
+                background: #FFDD00;
+                color: #000000 !important;
+            }
+            .el-doviz-btn-coffee:hover {
+                background: #ffea00;
+                transform: translateY(-1px);
+                box-shadow: 0 4px 6px rgba(255, 221, 0, 0.25);
+            }
+            @media (max-width: 900px) {
+                .el-doviz-dashboard-layout {
+                    flex-direction: column;
+                }
+                .el-doviz-sidebar-column {
+                    max-width: 100%;
+                    width: 100%;
+                }
+            }
+        </style>';
+
+        echo '<div class="el-doviz-dashboard-layout">';
+        echo '<div class="el-doviz-main-column">';
+
         // KVKK warning alert block
         echo '<div class="el-doviz-kvkk-alert" style="background: #fff8e5; border: 1px solid #ffeb3b; border-left: 4px solid #ffb900; padding: 15px; margin: 15px 0 25px 0; border-radius: 4px; display: flex; align-items: center; max-width: 1000px; box-shadow: 0 1px 1px rgba(0,0,0,.04);">';
         echo '<span class="dashicons dashicons-shield" style="font-size: 24px; width: 24px; height: 24px; color: #ffb900; margin-right: 12px; display: flex; align-items: center;"></span>';
@@ -309,6 +404,46 @@ class Settings {
         }
 
         echo '</div>'; // .tab-content
+        echo '</div>'; // .el-doviz-main-column
+
+        // Sidebar Column
+        echo '<div class="el-doviz-sidebar-column">';
+        
+        // Support Card
+        echo '<div class="el-doviz-sidebar-card">';
+        echo '<h3>' . esc_html__( 'Eklentiyi Destekleyin', 'el-doviz' ) . '</h3>';
+        echo '<p>' . esc_html__( 'El Döviz eklentisini beğendiyseniz, geliştirilmesine katkıda bulunmak ve yeni özelliklerin eklenmesini desteklemek için bağış yapabilirsiniz.', 'el-doviz' ) . '</p>';
+        echo '<div class="el-doviz-btn-group">';
+        
+        // GitHub Sponsors Button
+        echo '<a href="https://github.com/sponsors/LeMiira" target="_blank" class="el-doviz-btn el-doviz-btn-github">';
+        echo '<svg viewBox="0 0 16 16" width="18" height="18" fill="currentColor" style="margin-right: 8px;"><path fill-rule="evenodd" d="M8 1.482c4.847-3.817 12.23 2.196 0 11.625-12.23-9.429-4.847-15.442 0-11.625z"/></svg>';
+        echo esc_html__( 'GitHub Sponsors', 'el-doviz' );
+        echo '</a>';
+        
+        // Buy Me a Coffee Button
+        echo '<a href="https://www.buymeacoffee.com/miiiira" target="_blank" class="el-doviz-btn el-doviz-btn-coffee">';
+        echo '<svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-right: 8px;"><path d="M17 8h1a4 4 0 1 1 0 8h-1"/><path d="M3 8h14v9a4 4 0 0 1-4 4H7a4 4 0 0 1-4-4Z"/><line x1="6" y1="2" x2="6" y2="4"/><line x1="10" y1="2" x2="10" y2="4"/><line x1="14" y1="2" x2="14" y2="4"/></svg>';
+        echo esc_html__( 'Buy Me a Coffee', 'el-doviz' );
+        echo '</a>';
+        
+        echo '</div>'; // .el-doviz-btn-group
+        echo '</div>'; // .el-doviz-sidebar-card
+
+        // Quick Info Card
+        echo '<div class="el-doviz-sidebar-card" style="border-top-color: #72777c;">';
+        echo '<h3>' . esc_html__( 'Eklenti Bilgileri', 'el-doviz' ) . '</h3>';
+        echo '<p>';
+        echo '<strong>' . esc_html__( 'Sürüm:', 'el-doviz' ) . '</strong> ' . esc_html( EL_DOVIZ_VERSION ) . '<br>';
+        echo '<strong>' . esc_html__( 'Geliştirici:', 'el-doviz' ) . '</strong> <a href="https://miiiira.com" target="_blank">Mira</a><br>';
+        echo '<strong>' . esc_html__( 'Lisans:', 'el-doviz' ) . '</strong> GPLv2<br>';
+        echo '<strong>' . esc_html__( 'Veri Kaynağı:', 'el-doviz' ) . '</strong> ' . esc_html__( 'TCMB (T.C. Merkez Bankası)', 'el-doviz' );
+        echo '</p>';
+        echo '</div>'; // .el-doviz-sidebar-card
+        
+        echo '</div>'; // .el-doviz-sidebar-column
+
+        echo '</div>'; // .el-doviz-dashboard-layout
         echo '</div>'; // .wrap
     }
 }
