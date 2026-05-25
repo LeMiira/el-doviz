@@ -146,3 +146,7 @@ add_filter( 'el_doviz_api_endpoints', function( $endpoints ) {
    WordPress panelinizden eklentiyi aktifleştirin.
 4. **Configure / Yapılandırın**:
    **El Döviz** yönetim panelinden ayarlarınızı özelleştirin.
+
+## Screenshots
+
+![Dashboard](assets/screenshot-1.png)
