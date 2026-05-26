@@ -8,7 +8,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @param array $attributes Block attributes.
  * @return string HTML output.
  */
-function el_doviz_render_exchange_rates( $attributes ) {
+function ledoviz_turkish_exchange_rates_render_exchange_rates( $attributes ) {
     // Retrieve data via DataFetcher.
     if ( ! class_exists( 'ElDoviz\Service\DataFetcher' ) ) {
         return '';
@@ -16,11 +16,11 @@ function el_doviz_render_exchange_rates( $attributes ) {
     $fetcher = new \ElDoviz\Service\DataFetcher( new \ElDoviz\Service\CacheManager() );
     $rates   = $fetcher->fetch( 'tcmb', HOUR_IN_SECONDS );
     if ( is_wp_error( $rates ) ) {
-        return '<p>' . esc_html__( 'Döviz kurları yüklenemedi.', 'el-doviz' ) . '</p>';
+        return '<p>' . esc_html__( 'Döviz kurları yüklenemedi.', 'ledoviz-turkish-exchange-rates' ) . '</p>';
     }
 
     $currencies = array_map( 'trim', explode( ',', $attributes['currencies'] ) );
-    $output = '<section class="el-doviz-exchange-rates" itemscope itemtype="https://schema.org/FinancialProduct"><ul>';
+    $output = '<section class="ledoviz-turkish-exchange-rates-exchange-rates" itemscope itemtype="https://schema.org/FinancialProduct"><ul>';
     foreach ( $currencies as $code ) {
         $code_lc = strtolower( $code );
         if ( isset( $rates[ $code_lc ] ) ) {

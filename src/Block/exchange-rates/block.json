@@ -1,6 +1,6 @@
 {
     "apiVersion": 3,
-    "name": "el-doviz/exchange-rates",
+    "name": "ledoviz-turkish-exchange-rates/exchange-rates",
     "title": "Exchange Rates",
     "category": "widgets",
     "icon": "chart-line",

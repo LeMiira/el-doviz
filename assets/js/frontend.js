@@ -5,7 +5,7 @@
 
     // Pause ticker on hover and respect prefers-reduced-motion
     document.addEventListener('DOMContentLoaded', function () {
-        var tickers = document.querySelectorAll('.el-doviz-ticker');
+        var tickers = document.querySelectorAll('.ledoviz-turkish-exchange-rates-ticker');
         if (!tickers.length) {
             return;
         }

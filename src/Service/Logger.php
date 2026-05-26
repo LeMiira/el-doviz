@@ -7,7 +7,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 /**
  * Simple logger that writes to a file when debug mode is enabled.
- * The log directory is wp-content/uploads/el-doviz/logs/.
+ * The log directory is wp-content/uploads/ledoviz-turkish-exchange-rates/logs/.
  */
 class Logger {
     /**
@@ -17,7 +17,7 @@ class Logger {
      */
     public static function log( $message ) {
         $upload_dir = wp_upload_dir();
-        $log_dir    = trailingslashit( $upload_dir['basedir'] ) . 'el-doviz/logs';
+        $log_dir    = trailingslashit( $upload_dir['basedir'] ) . 'ledoviz-turkish-exchange-rates/logs';
         if ( ! file_exists( $log_dir ) ) {
             wp_mkdir_p( $log_dir );
         }

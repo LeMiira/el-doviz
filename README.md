@@ -1,4 +1,4 @@
-# 📈 El Döviz
+# 📈 LeDoviz - Turkish Exchange Rates
 
 [![WordPress Version](https://img.shields.io/badge/WordPress-%3E%3D%206.0-blue.svg?style=flat-square&logo=wordpress)](https://wordpress.org)
 [![PHP Version](https://img.shields.io/badge/PHP-%3E%3D%207.4-8892BF.svg?style=flat-square&logo=php)](https://php.net)
@@ -13,7 +13,7 @@
 <a name="english"></a>
 ## English
 
-**El Döviz** is a premium, lightweight, and high-performance WordPress plugin designed to seamlessly display Turkish Central Bank (TCMB) exchange rates. It features native support for Elementor widgets, Gutenberg blocks, responsive sidebars, shortcodes, and scrolling marquees.
+**LeDoviz - Turkish Exchange Rates** is a premium, lightweight, and high-performance WordPress plugin designed to seamlessly display Turkish Central Bank (TCMB) exchange rates. It features native support for Elementor widgets, Gutenberg blocks, responsive sidebars, shortcodes, and scrolling marquees.
 
 ### ✨ Features
 - **🚀 Multiple Display Options**: Grid, List, Scrolling Ticker, Sidebar, Header, and Footer display variations.
@@ -28,9 +28,9 @@
 Customize colors directly using CSS variables in your theme:
 ```css
 :root {
-  --el-doviz-primary: #C41E3A; /* Accent Color (Persian Red) */
-  --el-doviz-bg: #f8f9fa;      /* Silver/white container background */
-  --el-doviz-text: #212529;    /* Text Color */
+  --ledoviz-turkish-exchange-rates-primary: #C41E3A; /* Accent Color (Persian Red) */
+  --ledoviz-turkish-exchange-rates-bg: #f8f9fa;      /* Silver/white container background */
+  --ledoviz-turkish-exchange-rates-text: #212529;    /* Text Color */
 }
 ```
 
@@ -39,15 +39,15 @@ Customize colors directly using CSS variables in your theme:
 #### 1. Shortcodes
 * **Rates Grid/List**:
   ```text
-  [el_doviz_exchange_rates currencies="usd,eur,gbp" layout="list" theme="auto"]
+  [ledoviz_turkish_exchange_rates_exchange_rates currencies="usd,eur,gbp" layout="list" theme="auto"]
   ```
 * **Live Scrolling Ticker**:
   ```text
-  [el_doviz_ticker currencies="usd,eur,gbp" speed="5000"]
+  [ledoviz_turkish_exchange_rates_ticker currencies="usd,eur,gbp" speed="5000"]
   ```
 * **KVKK / Privacy Disclosure**:
   ```text
-  [el_doviz_privacy]
+  [ledoviz_turkish_exchange_rates_privacy]
   ```
 
 #### 2. Gutenberg Blocks
@@ -62,7 +62,7 @@ Customize colors directly using CSS variables in your theme:
 ### 🛠️ Developer Hooks & Filters
 ```php
 // Customize API endpoints (e.g. TCMB XML URL and BIST Hurriyet endpoint)
-add_filter( 'el_doviz_api_endpoints', function( $endpoints ) {
+add_filter( 'ledoviz_turkish_exchange_rates_api_endpoints', function( $endpoints ) {
     $endpoints['tcmb'] = 'https://your-fallback-source.com/xml';
     return $endpoints;
 } );
@@ -73,7 +73,7 @@ add_filter( 'el_doviz_api_endpoints', function( $endpoints ) {
 <a name="türkçe"></a>
 ## Türkçe
 
-**El Döviz**, Türkiye Cumhuriyeti Merkez Bankası (TCMB) döviz kurlarını sitenizde şık ve yüksek performanslı bir şekilde göstermeniz için tasarlanmış birinci sınıf, hafif ve güvenli bir WordPress eklentisidir. Elementor bileşenleri, Gutenberg blokları, duyarlı yan menüler (sidebar), kısa kodlar ve kayan yazı kur bantları için yerel destek içerir.
+**LeDoviz - Turkish Exchange Rates**, Türkiye Cumhuriyeti Merkez Bankası (TCMB) döviz kurlarını sitenizde şık ve yüksek performanslı bir şekilde göstermeniz için tasarlanmış birinci sınıf, hafif ve güvenli bir WordPress eklentisidir. Elementor bileşenleri, Gutenberg blokları, duyarlı yan menüler (sidebar), kısa kodlar ve kayan yazı kur bantları için yerel destek içerir.
 
 ### ✨ Özellikler
 - **🚀 Çoklu Gösterim Seçenekleri**: Liste, Izgara, Kayan Kur Bandı, Yan Menü, Alt Bilgi ve Üst Bilgi yerleşim varyasyonları.
@@ -88,9 +88,9 @@ add_filter( 'el_doviz_api_endpoints', function( $endpoints ) {
 Temanızdaki CSS değişkenlerini kullanarak renkleri doğrudan özelleştirin:
 ```css
 :root {
-  --el-doviz-primary: #C41E3A; /* Vurgu Rengi (Pers Kırmızısı) */
-  --el-doviz-bg: #f8f9fa;      /* Kutu Arka Planı (Gümüş/Beyaz) */
-  --el-doviz-text: #212529;    /* Yazı Rengi */
+  --ledoviz-turkish-exchange-rates-primary: #C41E3A; /* Vurgu Rengi (Pers Kırmızısı) */
+  --ledoviz-turkish-exchange-rates-bg: #f8f9fa;      /* Kutu Arka Planı (Gümüş/Beyaz) */
+  --ledoviz-turkish-exchange-rates-text: #212529;    /* Yazı Rengi */
 }
 ```
 
@@ -99,15 +99,15 @@ Temanızdaki CSS değişkenlerini kullanarak renkleri doğrudan özelleştirin:
 #### 1. Kısa Kodlar (Shortcodes)
 * **Kurlar Listesi/Izgarası**:
   ```text
-  [el_doviz_exchange_rates currencies="usd,eur,gbp" layout="list" theme="auto"]
+  [ledoviz_turkish_exchange_rates_exchange_rates currencies="usd,eur,gbp" layout="list" theme="auto"]
   ```
 * **Kayan Canlı Kur Bandı**:
   ```text
-  [el_doviz_ticker currencies="usd,eur,gbp" speed="5000"]
+  [ledoviz_turkish_exchange_rates_ticker currencies="usd,eur,gbp" speed="5000"]
   ```
 * **KVKK / Gizlilik Bildirimi**:
   ```text
-  [el_doviz_privacy]
+  [ledoviz_turkish_exchange_rates_privacy]
   ```
 
 #### 2. Gutenberg Blokları
@@ -122,7 +122,7 @@ Temanızdaki CSS değişkenlerini kullanarak renkleri doğrudan özelleştirin:
 ### 🛠️ Geliştirici Kancaları ve Filtreleri
 ```php
 // API uç noktalarını özelleştirin (örn. TCMB XML URL'si ve BIST Hürriyet API'si)
-add_filter( 'el_doviz_api_endpoints', function( $endpoints ) {
+add_filter( 'ledoviz_turkish_exchange_rates_api_endpoints', function( $endpoints ) {
     $endpoints['tcmb'] = 'https://alternatif-kaynaginiz.com/xml';
     return $endpoints;
 } );
@@ -135,11 +135,11 @@ add_filter( 'el_doviz_api_endpoints', function( $endpoints ) {
 1. **Clone the repository / Depoyu klonlayın**:
    ```bash
    cd wp-content/plugins
-   git clone https://github.com/LeMiira/el-doviz.git
+   git clone https://github.com/LeMiira/ledoviz-turkish-exchange-rates.git
    ```
 2. **Generate the autoloader / Composer yüklemesi**:
    ```bash
-   cd el-doviz
+   cd ledoviz-turkish-exchange-rates
    composer install
    ```
 3. **Activate the plugin / Eklentiyi etkinleştirin**:

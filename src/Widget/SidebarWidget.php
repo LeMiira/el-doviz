@@ -11,9 +11,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 class SidebarWidget extends \WP_Widget {
     public function __construct() {
         parent::__construct(
-            'el_doviz_sidebar_widget',
-            esc_html__( 'El Döviz Yan Menü Bileşeni', 'el-doviz' ),
-            [ 'description' => esc_html__( 'Döviz kurlarını yan menüde gösterir.', 'el-doviz' ) ]
+            'ledoviz_turkish_exchange_rates_sidebar_widget',
+            esc_html__( 'El Döviz Yan Menü Bileşeni', 'ledoviz-turkish-exchange-rates' ),
+            [ 'description' => esc_html__( 'Döviz kurlarını yan menüde gösterir.', 'ledoviz-turkish-exchange-rates' ) ]
         );
     }
 
@@ -26,8 +26,8 @@ class SidebarWidget extends \WP_Widget {
         $currencies = isset( $instance['currencies'] ) ? $instance['currencies'] : 'usd,eur,gbp';
 
         // Reuse shortcode rendering callback or display simple list.
-        if ( function_exists( 'el_doviz_render_exchange_rates' ) ) {
-            echo wp_kses_post( el_doviz_render_exchange_rates( [
+        if ( function_exists( 'ledoviz_turkish_exchange_rates_render_exchange_rates' ) ) {
+            echo wp_kses_post( ledoviz_turkish_exchange_rates_render_exchange_rates( [
                 'currencies' => $currencies,
                 'layout'     => 'list',
                 'theme'      => 'auto',
@@ -38,15 +38,15 @@ class SidebarWidget extends \WP_Widget {
     }
 
     public function form( $instance ) {
-        $title      = ! empty( $instance['title'] ) ? $instance['title'] : esc_html__( 'Döviz Kurları', 'el-doviz' );
+        $title      = ! empty( $instance['title'] ) ? $instance['title'] : esc_html__( 'Döviz Kurları', 'ledoviz-turkish-exchange-rates' );
         $currencies = ! empty( $instance['currencies'] ) ? $instance['currencies'] : 'usd,eur,gbp';
         ?>
         <p>
-            <label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php esc_html_e( 'Başlık:', 'el-doviz' ); ?></label>
+            <label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php esc_html_e( 'Başlık:', 'ledoviz-turkish-exchange-rates' ); ?></label>
             <input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'title' ) ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>" />
         </p>
         <p>
-            <label for="<?php echo esc_attr( $this->get_field_id( 'currencies' ) ); ?>"><?php esc_html_e( 'Para Birimleri (virgülle ayrılmış):', 'el-doviz' ); ?></label>
+            <label for="<?php echo esc_attr( $this->get_field_id( 'currencies' ) ); ?>"><?php esc_html_e( 'Para Birimleri (virgülle ayrılmış):', 'ledoviz-turkish-exchange-rates' ); ?></label>
             <input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'currencies' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'currencies' ) ); ?>" type="text" value="<?php echo esc_attr( $currencies ); ?>" />
         </p>
         <?php

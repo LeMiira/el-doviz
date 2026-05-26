@@ -1,14 +1,14 @@
 <?php
 /**
- * Plugin Name: El Doviz
- * Plugin URI: https://github.com/LeMiira/el-doviz
+ * Plugin Name: LeDoviz - Turkish Exchange Rates
+ * Plugin URI: https://github.com/LeMiira/ledoviz-turkish-exchange-rates
  * Description: Lightweight Turkish exchange rates, plugin for WordPress with Elementor, Gutenberg, shortcode, and widget support.
  * Version: 1.0.0
  * Author: Mira
  * Author URI: https://miiiira.com
  * License: GPLv2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
- * Text Domain: el-doviz
+ * Text Domain: ledoviz-turkish-exchange-rates
  * Domain Path: /languages
  * Requires at least: 6.0
  * Tested up to: 7.0
@@ -24,7 +24,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 define( 'EL_DOVIZ_VERSION', '1.0.0' );
 define( 'EL_DOVIZ_PATH', plugin_dir_path( __FILE__ ) );
 define( 'EL_DOVIZ_URL', plugin_dir_url( __FILE__ ) );
-define( 'EL_DOVIZ_SLUG', 'el-doviz' );
+define( 'EL_DOVIZ_SLUG', 'ledoviz-turkish-exchange-rates' );
 
 // 3. Composer autoload
 if ( file_exists( EL_DOVIZ_PATH . 'vendor/autoload.php' ) ) {
@@ -45,7 +45,7 @@ if ( class_exists( '\ElDoviz\Main' ) && method_exists( '\ElDoviz\Main', 'instanc
 
 // 7. Plugin Action Links (Donate link)
 add_filter( 'plugin_action_links_' . plugin_basename( __FILE__ ), function ( $links ) {
-    $donate_link = '<a href="https://github.com/sponsors/LeMiira" target="_blank" style="color: #C41E3A; font-weight: bold;">' . esc_html__( 'Donate', 'el-doviz' ) . '</a>';
+    $donate_link = '<a href="https://github.com/sponsors/LeMiira" target="_blank" style="color: #C41E3A; font-weight: bold;">' . esc_html__( 'Donate', 'ledoviz-turkish-exchange-rates' ) . '</a>';
     array_unshift( $links, $donate_link );
     return $links;
 } );

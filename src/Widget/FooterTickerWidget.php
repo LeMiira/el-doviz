@@ -11,9 +11,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 class FooterTickerWidget extends \WP_Widget {
     public function __construct() {
         parent::__construct(
-            'el_doviz_footer_ticker',
-            esc_html__( 'El Doviz Footer Ticker', 'el-doviz' ),
-            [ 'description' => esc_html__( 'Shows a scrolling ticker of exchange rates in the footer.', 'el-doviz' ) ]
+            'ledoviz_turkish_exchange_rates_footer_ticker',
+            esc_html__( 'El Doviz Footer Ticker', 'ledoviz-turkish-exchange-rates' ),
+            [ 'description' => esc_html__( 'Shows a scrolling ticker of exchange rates in the footer.', 'ledoviz-turkish-exchange-rates' ) ]
         );
     }
 
@@ -22,13 +22,13 @@ class FooterTickerWidget extends \WP_Widget {
         $fetcher = new \ElDoviz\Service\DataFetcher( new \ElDoviz\Service\CacheManager() );
         $rates   = $fetcher->fetch( 'tcmb', HOUR_IN_SECONDS );
         if ( is_wp_error( $rates ) ) {
-            echo '<p>' . esc_html__( 'Rates unavailable.', 'el-doviz' ) . '</p>';
+            echo '<p>' . esc_html__( 'Rates unavailable.', 'ledoviz-turkish-exchange-rates' ) . '</p>';
             echo wp_kses_post( $args['after_widget'] );
             return;
         }
         $currencies = isset( $instance['currencies'] ) ? $instance['currencies'] : 'usd,eur,gbp';
         $currencies = array_map( 'trim', explode( ',', $currencies ) );
-        echo '<ul class="el-doviz-footer-ticker" aria-live="polite">';
+        echo '<ul class="ledoviz-turkish-exchange-rates-footer-ticker" aria-live="polite">';
         foreach ( $currencies as $code ) {
             $code_lc = strtolower( $code );
             if ( isset( $rates[ $code_lc ] ) ) {
@@ -48,7 +48,7 @@ class FooterTickerWidget extends \WP_Widget {
         $currencies = ! empty( $instance['currencies'] ) ? $instance['currencies'] : 'usd,eur,gbp';
         ?>
         <p>
-            <label for="<?php echo esc_attr( $this->get_field_id( 'currencies' ) ); ?>"><?php esc_html_e( 'Currencies (comma separated)', 'el-doviz' ); ?></label>
+            <label for="<?php echo esc_attr( $this->get_field_id( 'currencies' ) ); ?>"><?php esc_html_e( 'Currencies (comma separated)', 'ledoviz-turkish-exchange-rates' ); ?></label>
             <input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'currencies' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'currencies' ) ); ?>" type="text" value="<?php echo esc_attr( $currencies ); ?>" />
         </p>
         <?php

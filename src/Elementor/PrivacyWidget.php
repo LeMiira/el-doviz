@@ -16,11 +16,11 @@ use Elementor\Group_Control_Box_Shadow;
  */
 class PrivacyWidget extends Widget_Base {
     public function get_name() {
-        return 'el_doviz_privacy';
+        return 'ledoviz_turkish_exchange_rates_privacy';
     }
 
     public function get_title() {
-        return esc_html__( 'El Döviz Gizlilik ve KVKK', 'el-doviz' );
+        return esc_html__( 'El Döviz Gizlilik ve KVKK', 'ledoviz-turkish-exchange-rates' );
     }
 
     public function get_icon() {
@@ -36,17 +36,17 @@ class PrivacyWidget extends Widget_Base {
         $this->start_controls_section(
             'content_section',
             [
-                'label' => esc_html__( 'İçerik', 'el-doviz' ),
+                'label' => esc_html__( 'İçerik', 'ledoviz-turkish-exchange-rates' ),
                 'tab'   => Controls_Manager::TAB_CONTENT,
             ]
         );
 
-        $default_text = esc_html__( 'Bu sitede gösterilen tüm döviz kurları ve finansal veriler, Türkiye Cumhuriyet Merkez Bankası (TCMB) tarafından sağlanan halka açık verilerden alınmakta olup yalnızca bilgilendirme amaçlıdır. Verilerin kesin doğruluğu veya anlık güncelliği garanti edilmez. Kişisel verileriniz KVKK kapsamında korunmakta olup, bu eklenti aracılığıyla hiçbir kişisel ziyaretçi verisi toplanmamakta veya işlenmemektedir.', 'el-doviz' );
+        $default_text = esc_html__( 'Bu sitede gösterilen tüm döviz kurları ve finansal veriler, Türkiye Cumhuriyet Merkez Bankası (TCMB) tarafından sağlanan halka açık verilerden alınmakta olup yalnızca bilgilendirme amaçlıdır. Verilerin kesin doğruluğu veya anlık güncelliği garanti edilmez. Kişisel verileriniz KVKK kapsamında korunmakta olup, bu eklenti aracılığıyla hiçbir kişisel ziyaretçi verisi toplanmamakta veya işlenmemektedir.', 'ledoviz-turkish-exchange-rates' );
 
         $this->add_control(
             'privacy_text',
             [
-                'label'       => esc_html__( 'Açıklama Metni', 'el-doviz' ),
+                'label'       => esc_html__( 'Açıklama Metni', 'ledoviz-turkish-exchange-rates' ),
                 'type'        => Controls_Manager::WYSIWYG,
                 'default'     => $default_text,
                 'label_block' => true,
@@ -56,25 +56,25 @@ class PrivacyWidget extends Widget_Base {
         $this->add_control(
             'align',
             [
-                'label'   => esc_html__( 'Hizalama', 'el-doviz' ),
+                'label'   => esc_html__( 'Hizalama', 'ledoviz-turkish-exchange-rates' ),
                 'type'    => Controls_Manager::CHOOSE,
                 'options' => [
                     'left'   => [
-                        'title' => esc_html__( 'Sol', 'el-doviz' ),
+                        'title' => esc_html__( 'Sol', 'ledoviz-turkish-exchange-rates' ),
                         'icon'  => 'eicon-text-align-left',
                     ],
                     'center' => [
-                        'title' => esc_html__( 'Orta', 'el-doviz' ),
+                        'title' => esc_html__( 'Orta', 'ledoviz-turkish-exchange-rates' ),
                         'icon'  => 'eicon-text-align-center',
                     ],
                     'right'  => [
-                        'title' => esc_html__( 'Sağ', 'el-doviz' ),
+                        'title' => esc_html__( 'Sağ', 'ledoviz-turkish-exchange-rates' ),
                         'icon'  => 'eicon-text-align-right',
                     ],
                 ],
                 'default'   => 'left',
                 'selectors' => [
-                    '{{WRAPPER}} .el-doviz-privacy-container' => 'text-align: {{VALUE}};',
+                    '{{WRAPPER}} .ledoviz-turkish-exchange-rates-privacy-container' => 'text-align: {{VALUE}};',
                 ],
             ]
         );
@@ -85,7 +85,7 @@ class PrivacyWidget extends Widget_Base {
         $this->start_controls_section(
             'style_section',
             [
-                'label' => esc_html__( 'Stil Seçenekleri', 'el-doviz' ),
+                'label' => esc_html__( 'Stil Seçenekleri', 'ledoviz-turkish-exchange-rates' ),
                 'tab'   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -93,10 +93,10 @@ class PrivacyWidget extends Widget_Base {
         $this->add_control(
             'text_color',
             [
-                'label'     => esc_html__( 'Metin Rengi', 'el-doviz' ),
+                'label'     => esc_html__( 'Metin Rengi', 'ledoviz-turkish-exchange-rates' ),
                 'type'      => Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .el-doviz-privacy-container' => 'color: {{VALUE}};',
+                    '{{WRAPPER}} .ledoviz-turkish-exchange-rates-privacy-container' => 'color: {{VALUE}};',
                 ],
             ]
         );
@@ -104,10 +104,10 @@ class PrivacyWidget extends Widget_Base {
         $this->add_control(
             'bg_color',
             [
-                'label'     => esc_html__( 'Arka Plan Rengi', 'el-doviz' ),
+                'label'     => esc_html__( 'Arka Plan Rengi', 'ledoviz-turkish-exchange-rates' ),
                 'type'      => Controls_Manager::COLOR,
                 'selectors' => [
-                    '{{WRAPPER}} .el-doviz-privacy-container' => 'background-color: {{VALUE}};',
+                    '{{WRAPPER}} .ledoviz-turkish-exchange-rates-privacy-container' => 'background-color: {{VALUE}};',
                 ],
             ]
         );
@@ -116,18 +116,18 @@ class PrivacyWidget extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name'     => 'typography',
-                'selector' => '{{WRAPPER}} .el-doviz-privacy-container',
+                'selector' => '{{WRAPPER}} .ledoviz-turkish-exchange-rates-privacy-container',
             ]
         );
 
         $this->add_responsive_control(
             'padding',
             [
-                'label'      => esc_html__( 'İç Boşluk (Padding)', 'el-doviz' ),
+                'label'      => esc_html__( 'İç Boşluk (Padding)', 'ledoviz-turkish-exchange-rates' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%', 'em' ],
                 'selectors' => [
-                    '{{WRAPPER}} .el-doviz-privacy-container' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                    '{{WRAPPER}} .ledoviz-turkish-exchange-rates-privacy-container' => 'padding: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                 ],
             ]
         );
@@ -136,18 +136,18 @@ class PrivacyWidget extends Widget_Base {
             Group_Control_Border::get_type(),
             [
                 'name'     => 'border',
-                'selector' => '{{WRAPPER}} .el-doviz-privacy-container',
+                'selector' => '{{WRAPPER}} .ledoviz-turkish-exchange-rates-privacy-container',
             ]
         );
 
         $this->add_control(
             'border_radius',
             [
-                'label'      => esc_html__( 'Kenar Yumuşatma (Border Radius)', 'el-doviz' ),
+                'label'      => esc_html__( 'Kenar Yumuşatma (Border Radius)', 'ledoviz-turkish-exchange-rates' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%' ],
                 'selectors' => [
-                    '{{WRAPPER}} .el-doviz-privacy-container' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
+                    '{{WRAPPER}} .ledoviz-turkish-exchange-rates-privacy-container' => 'border-radius: {{TOP}}{{UNIT}} {{RIGHT}}{{UNIT}} {{BOTTOM}}{{UNIT}} {{LEFT}}{{UNIT}};',
                 ],
             ]
         );
@@ -156,7 +156,7 @@ class PrivacyWidget extends Widget_Base {
             Group_Control_Box_Shadow::get_type(),
             [
                 'name'     => 'box_shadow',
-                'selector' => '{{WRAPPER}} .el-doviz-privacy-container',
+                'selector' => '{{WRAPPER}} .ledoviz-turkish-exchange-rates-privacy-container',
             ]
         );
 
@@ -167,7 +167,7 @@ class PrivacyWidget extends Widget_Base {
         $settings = $this->get_settings_for_display();
         $text = ! empty( $settings['privacy_text'] ) ? $settings['privacy_text'] : '';
 
-        echo '<div class="el-doviz-privacy-container">';
+        echo '<div class="ledoviz-turkish-exchange-rates-privacy-container">';
         echo wp_kses_post( $text );
         echo '</div>';
     }

@@ -8,7 +8,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * @param array $attributes Block attributes.
  * @return string HTML output.
  */
-function el_doviz_render_ticker( $attributes ) {
+function ledoviz_turkish_exchange_rates_render_ticker( $attributes ) {
     $currencies = isset( $attributes['currencies'] ) ? $attributes['currencies'] : 'usd,eur,gbp';
     $speed      = isset( $attributes['speed'] ) ? (int) $attributes['speed'] : 5000;
     $list       = array_map( 'trim', explode( ',', $currencies ) );
@@ -16,7 +16,7 @@ function el_doviz_render_ticker( $attributes ) {
     $fetcher = new \ElDoviz\Service\DataFetcher( new \ElDoviz\Service\CacheManager() );
     $rates   = $fetcher->fetch( 'tcmb', HOUR_IN_SECONDS );
     if ( is_wp_error( $rates ) ) {
-        return '<p>' . esc_html__( 'Kurlar yüklenemedi.', 'el-doviz' ) . '</p>';
+        return '<p>' . esc_html__( 'Kurlar yüklenemedi.', 'ledoviz-turkish-exchange-rates' ) . '</p>';
     }
 
     $items = [];
@@ -29,15 +29,7 @@ function el_doviz_render_ticker( $attributes ) {
     }
     $ticker_text = implode( ' | ', $items );
 
-    // Inline CSS animation for ticker (respect prefers-reduced-motion).
-    $animation_css = sprintf(
-        '<style>.el-doviz-ticker { overflow: hidden; white-space: nowrap; }
-        @media (prefers-reduced-motion: no-preference) { .el-doviz-ticker span { display: inline-block; padding-right: 2rem; animation: el-doviz-scroll %dms linear infinite; } }
-        @keyframes el-doviz-scroll { 0%% { transform: translateX(100%%); } 100%% { transform: translateX(-100%%); } }
-        </style>',
-        $speed * max( 1, count( $items ) )
-    );
-
-    return $animation_css . '<div class="el-doviz-ticker" aria-live="polite"><span>' . $ticker_text . '</span></div>';
+    $duration = $speed * max( 1, count( $items ) );
+    return '<div class="ledoviz-turkish-exchange-rates-ticker" style="--ledoviz-turkish-exchange-rates-duration: ' . (int) $duration . 'ms;" aria-live="polite"><span>' . esc_html( $ticker_text ) . '</span></div>';
 }
 ?>

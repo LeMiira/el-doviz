@@ -11,14 +11,14 @@ if ( ! defined( 'ABSPATH' ) ) {
 class LogsPage extends AdminPage {
     public static function render() {
         echo '<div class="wrap">';
-        echo '<h1>' . esc_html__( 'Eklenti Günlükleri', 'el-doviz' ) . '</h1>';
-        echo '<p>' . esc_html__( 'Hata ayıklama günlüğü dosyası içeriklerini görüntüleyin. Ayarlar altında Hata Ayıklama Modu etkin olmalıdır.', 'el-doviz' ) . '</p>';
+        echo '<h1>' . esc_html__( 'Eklenti Günlükleri', 'ledoviz-turkish-exchange-rates' ) . '</h1>';
+        echo '<p>' . esc_html__( 'Hata ayıklama günlüğü dosyası içeriklerini görüntüleyin. Ayarlar altında Hata Ayıklama Modu etkin olmalıdır.', 'ledoviz-turkish-exchange-rates' ) . '</p>';
 
         $upload_dir = wp_upload_dir();
-        $log_file   = trailingslashit( $upload_dir['basedir'] ) . 'el-doviz/logs/debug.log';
+        $log_file   = trailingslashit( $upload_dir['basedir'] ) . 'ledoviz-turkish-exchange-rates/logs/debug.log';
 
         echo '<div class="card" style="max-width: 900px; padding: 20px; border-left: 4px solid #C41E3A;">';
-        echo '<h2>' . esc_html__( 'Hata Ayıklama Günlüğü Görüntüleyici', 'el-doviz' ) . '</h2>';
+        echo '<h2>' . esc_html__( 'Hata Ayıklama Günlüğü Görüntüleyici', 'ledoviz-turkish-exchange-rates' ) . '</h2>';
 
         if ( file_exists( $log_file ) ) {
             $logs = file_get_contents( $log_file );
@@ -26,7 +26,7 @@ class LogsPage extends AdminPage {
             echo esc_textarea( $logs );
             echo '</textarea>';
         } else {
-            echo '<p>' . esc_html__( 'Kayıtlı günlük bulunmamaktadır veya Hata Ayıklama Modu devre dışıdır.', 'el-doviz' ) . '</p>';
+            echo '<p>' . esc_html__( 'Kayıtlı günlük bulunmamaktadır veya Hata Ayıklama Modu devre dışıdır.', 'ledoviz-turkish-exchange-rates' ) . '</p>';
         }
         echo '</div>';
         echo '</div>';

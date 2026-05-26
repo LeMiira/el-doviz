@@ -20,7 +20,7 @@ class RatesController extends WP_REST_Controller {
      *
      * @var string
      */
-    protected $namespace = 'el-doviz/v1';
+    protected $namespace = 'ledoviz-turkish-exchange-rates/v1';
 
     /**
      * Register routes.
@@ -33,7 +33,7 @@ class RatesController extends WP_REST_Controller {
                 'permission_callback' => [ $this, 'public_permission' ],
                 'args'                => [
                     'source' => [
-                        'description' => esc_html__( 'Data source (tcmb).', 'el-doviz' ),
+                        'description' => esc_html__( 'Data source (tcmb).', 'ledoviz-turkish-exchange-rates' ),
                         'type'        => 'string',
                         'enum'        => [ 'tcmb' ],
                         'default'     => 'tcmb',
@@ -59,7 +59,7 @@ class RatesController extends WP_REST_Controller {
         $fetcher = new \ElDoviz\Service\DataFetcher( new \ElDoviz\Service\CacheManager() );
         $data    = $fetcher->fetch( $source, HOUR_IN_SECONDS );
         if ( is_wp_error( $data ) ) {
-            return new WP_Error( 'el_doviz_rest_error', $data->get_error_message(), [ 'status' => 500 ] );
+            return new WP_Error( 'ledoviz_turkish_exchange_rates_rest_error', $data->get_error_message(), [ 'status' => 500 ] );
         }
         return rest_ensure_response( $data );
     }

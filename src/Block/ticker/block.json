@@ -1,6 +1,6 @@
 {
     "apiVersion": 3,
-    "name": "el-doviz/ticker",
+    "name": "ledoviz-turkish-exchange-rates/ticker",
     "title": "Live Ticker",
     "category": "widgets",
     "icon": "editor-code",

@@ -1,4 +1,4 @@
-=== El Doviz ===
+=== LeDoviz - Turkish Exchange Rates ===
 Contributors: miiira
 Donate link: https://github.com/sponsors/LeMiira
 Tags: exchange-rates, tcmb, elementor, gutenberg, widget
@@ -12,7 +12,7 @@ License URI: https://www.gnu.org/licenses/gpl-2.0.html
 Lightweight Turkish exchange rates display with Elementor, Gutenberg, shortcodes, and widget support.
 
 == Description ==
-El Doviz is a lightweight, modern, and fully secure WordPress plugin that displays Turkish exchange rates. It works with Gutenberg blocks, Elementor widgets, classic shortcodes, and header/footer widgets. All data sources are free public APIs (TCMB for rates) – no API keys required.
+LeDoviz - Turkish Exchange Rates is a lightweight, modern, and fully secure WordPress plugin that displays Turkish exchange rates. It works with Gutenberg blocks, Elementor widgets, classic shortcodes, and header/footer widgets. All data sources are free public APIs – no API keys required.
 
 * Responsive mobile‑first design with Persian red accents and premium silver/white theme.
 * Accessible UI – ARIA live regions, keyboard navigation, and reduced‑motion support.
@@ -20,16 +20,24 @@ El Doviz is a lightweight, modern, and fully secure WordPress plugin that displa
 * KVKK‑compliant privacy page and disclaimer.
 * Multisite compatible, translation ready (EN & TR), and fully PHPCS/WordPress‑Coding‑Standards compliant.
 
+== External Services ==
+This plugin connects to external APIs to retrieve daily exchange rates and stock index values:
+1. Central Bank of the Republic of Turkey (TCMB) API (https://www.tcmb.gov.tr/kurlar/today.xml) is used to obtain daily currency exchange rates against the Turkish Lira. No personal visitor data is sent or stored. Data is fetched anonymously and cached locally on your server for 1 hour.
+   - TCMB Terms of Use: https://www.tcmb.gov.tr/wps/wcm/connect/tr/tcmb+tr/main+menu/yasal+uyari
+   - TCMB Privacy Policy: https://www.tcmb.gov.tr/wps/wcm/connect/tr/tcmb+tr/main+menu/yasal+uyari
+2. Bigpara (Hürriyet) API (https://bigpara.hurriyet.com.tr) is used to fetch the current BIST 100 stock index data. No personal visitor data is sent or stored. Data is cached locally on your server for 1 hour.
+   - Hürriyet Terms & Privacy: https://www.hurriyet.com.tr/veriler/politikamiz/
+
 == Shortcodes ==
 Use the following shortcodes to display exchange rates and ticker feeds anywhere on your site:
-* `[el_doviz_exchange_rates currencies="usd,eur,gbp" layout="list"]` - Displays a list or grid of currency exchange rates.
+* `[ledoviz_turkish_exchange_rates_exchange_rates currencies="usd,eur,gbp" layout="list"]` - Displays a list or grid of currency exchange rates.
   * **currencies**: Comma-separated ISO codes (default: `usd,eur,gbp`).
   * **layout**: `list`, `grid` (default: `list`).
   * **theme**: `auto`, `light`, `dark` (default: `auto`).
-* `[el_doviz_ticker currencies="usd,eur,gbp" speed="5000"]` - Displays a scrolling marquee header/footer ticker.
+* `[ledoviz_turkish_exchange_rates_ticker currencies="usd,eur,gbp" speed="5000"]` - Displays a scrolling marquee header/footer ticker.
   * **currencies**: Comma-separated ISO codes (default: `usd,eur,gbp`).
   * **speed**: Animation duration per item in ms (default: `5000`).
-* `[el_doviz_privacy]` - Outputs standard disclosure/privacy text stating that the rates are provided for informational purposes only.
+* `[ledoviz_turkish_exchange_rates_privacy]` - Outputs standard disclosure/privacy text stating that the rates are provided for informational purposes only.
 
 == Gutenberg Blocks & Elementor Widgets ==
 The plugin includes native, high-performance editor integrations:
@@ -40,15 +48,15 @@ The plugin includes native, high-performance editor integrations:
 Colors can be customized in your theme stylesheet using CSS custom properties:
 `
 :root {
-  --el-doviz-primary: #C41E3A; /* Persian Red accent color */
-  --el-doviz-bg: #f8f9fa;      /* Silver/white container background */
-  --el-doviz-text: #212529;    /* Text color */
+  --ledoviz-turkish-exchange-rates-primary: #C41E3A; /* Persian Red accent color */
+  --ledoviz-turkish-exchange-rates-bg: #f8f9fa;      /* Silver/white container background */
+  --ledoviz-turkish-exchange-rates-text: #212529;    /* Text color */
 }
 `
 
 == Developer Filters ==
-* `el_doviz_tcmb_url` - Filter the TCMB XML feed URL.
-* `el_doviz_enqueue_assets` - Control when assets are enqueued on the frontend.
+* `ledoviz_turkish_exchange_rates_tcmb_url` - Filter the TCMB XML feed URL.
+* `ledoviz_turkish_exchange_rates_enqueue_assets` - Control when assets are enqueued on the frontend.
 
 == Performance & Caching ==
 * **Cache Engine**: Utilizes the WordPress Transients API.
@@ -61,7 +69,7 @@ Colors can be customized in your theme stylesheet using CSS custom properties:
 * **Keyboard Navigation**: Native tab indices and focus states are respected in all layouts.
 
 == Installation ==
-1. Upload the `el-doviz` folder to the `/wp-content/plugins/` directory.
+1. Upload the `ledoviz-turkish-exchange-rates` folder to the `/wp-content/plugins/` directory.
 2. Activate the plugin through the **Plugins** menu in WordPress.
 3. Configure settings under **El Doviz → Appearance** to match your site theme.
 4. Insert blocks/widgets/shortcodes where you want the data to appear.

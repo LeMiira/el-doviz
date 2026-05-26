@@ -43,6 +43,7 @@ class Main {
 
         // Register assets.
         add_action( 'wp_enqueue_scripts', [ $this, 'enqueue_assets' ] );
+        add_action( 'admin_enqueue_scripts', [ $this, 'enqueue_admin_assets' ] );
         // Register core components and hooks.
         add_action( 'init', [ $this, 'register_components' ] );
         add_action( 'admin_init', [ $this->settings, 'register_settings' ] );
@@ -50,7 +51,7 @@ class Main {
         add_action( 'widgets_init', [ $this, 'register_widgets' ] );
         add_action( 'rest_api_init', [ $this, 'register_rest_routes' ] );
         // Cron callback for data refresh.
-        add_action( 'el_doviz_refresh_data', [ Installer::class, 'refresh_data' ] );
+        add_action( 'ledoviz_turkish_exchange_rates_refresh_data', [ Installer::class, 'refresh_data' ] );
     }
 
     /**
@@ -58,9 +59,16 @@ class Main {
      */
     public function enqueue_assets() {
         // Enqueue CSS.
-        wp_enqueue_style( 'el-doviz-frontend', EL_DOVIZ_URL . 'assets/css/frontend.css', [], EL_DOVIZ_VERSION );
+        wp_enqueue_style( 'ledoviz-turkish-exchange-rates-frontend', EL_DOVIZ_URL . 'assets/css/frontend.css', [], EL_DOVIZ_VERSION );
         // Enqueue JS (optional, currently empty placeholder).
-        wp_enqueue_script( 'el-doviz-frontend-js', EL_DOVIZ_URL . 'assets/js/frontend.js', [], EL_DOVIZ_VERSION, true );
+        wp_enqueue_script( 'ledoviz-turkish-exchange-rates-frontend-js', EL_DOVIZ_URL . 'assets/js/frontend.js', [], EL_DOVIZ_VERSION, true );
+    }
+
+    /**
+     * Enqueue admin CSS.
+     */
+    public function enqueue_admin_assets() {
+        wp_enqueue_style( 'ledoviz-turkish-exchange-rates-admin', EL_DOVIZ_URL . 'assets/css/admin.css', [], EL_DOVIZ_VERSION );
     }
 
 
@@ -114,12 +122,12 @@ class Main {
      */
     public static function activate() {
         // Schedule cron for data refresh.
-        if ( ! wp_next_scheduled( 'el_doviz_refresh_data' ) ) {
-            wp_schedule_event( time(), 'hourly', 'el_doviz_refresh_data' );
+        if ( ! wp_next_scheduled( 'ledoviz_turkish_exchange_rates_refresh_data' ) ) {
+            wp_schedule_event( time(), 'hourly', 'ledoviz_turkish_exchange_rates_refresh_data' );
         }
         // Set default options if not existent.
-        if ( false === get_option( 'el_doviz_options' ) ) {
-            add_option( 'el_doviz_options', [] );
+        if ( false === get_option( 'ledoviz_turkish_exchange_rates_options' ) ) {
+            add_option( 'ledoviz_turkish_exchange_rates_options', [] );
         }
     }
 
@@ -127,7 +135,7 @@ class Main {
      * Deactivation hook.
      */
     public static function deactivate() {
-        wp_clear_scheduled_hook( 'el_doviz_refresh_data' );
+        wp_clear_scheduled_hook( 'ledoviz_turkish_exchange_rates_refresh_data' );
     }
 }
 ?>

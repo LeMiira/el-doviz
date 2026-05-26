@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: El Doviz 1.0.0\n"
+"Project-Id-Version: LeDoviz 1.0.0\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2026-05-25 12:00+0300\n"
 "PO-Revision-Date: 2026-05-25 12:00+0300\n"
@@ -12,14 +12,14 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgid "El Döviz eklenti seçenekleri"
-msgstr "El Doviz plugin options"
+msgid "LeDoviz eklenti seçenekleri"
+msgstr "LeDoviz plugin options"
 
 msgid "Genel Ayarlar"
 msgstr "General Settings"
 
-msgid "El Döviz eklentisinin genel davranışını yapılandırın."
-msgstr "Configure the general behavior of the El Doviz plugin."
+msgid "LeDoviz eklentisinin genel davranışını yapılandırın."
+msgstr "Configure the general behavior of the LeDoviz plugin."
 
 msgid "Üst Bilgi Bandını Etkinleştir"
 msgstr "Enable Header Ticker"
@@ -30,11 +30,11 @@ msgstr "Debug Mode"
 msgid "Site üst bilgisinde döviz kuru bandını göster."
 msgstr "Show the exchange rate ticker in the site header."
 
-msgid "Hata ayıklama günlüğünü etkinleştir (uploads/el-doviz/logs/debug.log dosyasına yazar)."
-msgstr "Enable debug logging (writes to uploads/el-doviz/logs/debug.log)."
+msgid "Hata ayıklama günlüğünü etkinleştir (uploads/ledoviz-turkish-exchange-rates/logs/debug.log dosyasına yazar)."
+msgstr "Enable debug logging (writes to uploads/ledoviz-turkish-exchange-rates/logs/debug.log)."
 
-msgid "El Döviz"
-msgstr "El Doviz"
+msgid "LeDoviz"
+msgstr "LeDoviz"
 
 msgid "Panel"
 msgstr "Dashboard"
@@ -48,8 +48,8 @@ msgstr "Logs"
 msgid "Yetersiz yetki."
 msgstr "Insufficient permissions."
 
-msgid "El Döviz Yönetim Paneli"
-msgstr "El Doviz Dashboard"
+msgid "LeDoviz Yönetim Paneli"
+msgstr "LeDoviz Dashboard"
 
 msgid "Çok Yakında"
 msgstr "Coming Soon"
@@ -87,8 +87,8 @@ msgstr "Debug Log Viewer"
 msgid "Kayıtlı günlük bulunmamaktadır veya Hata Ayıklama Modu devre dışıdır."
 msgstr "No logs available or Debug Mode is disabled."
 
-msgid "El Döviz Yan Menü Bileşeni"
-msgstr "El Doviz Sidebar Widget"
+msgid "LeDoviz Yan Menü Bileşeni"
+msgstr "LeDoviz Sidebar Widget"
 
 msgid "Döviz kurlarını yan menüde gösterir."
 msgstr "Shows exchange rates in the sidebar."
@@ -102,8 +102,8 @@ msgstr "Title:"
 msgid "Para Birimleri (virgülle ayrılmış):"
 msgstr "Currencies (comma separated):"
 
-msgid "El Döviz Kurları ve Endeksler"
-msgstr "El Doviz Rates & Indices"
+msgid "LeDoviz Kurları ve Endeksler"
+msgstr "LeDoviz Rates & Indices"
 
 msgid "İçerik"
 msgstr "Content"
@@ -195,14 +195,14 @@ msgstr "Border Radius"
 msgid "BIST 100"
 msgstr "BIST 100"
 
-msgid "El Döviz Canlı Kur Bandı"
-msgstr "El Doviz Live Ticker"
+msgid "LeDoviz Canlı Kur Bandı"
+msgstr "LeDoviz Live Ticker"
 
 msgid "Bant Hızı (ms)"
 msgstr "Ticker Speed (ms)"
 
-msgid "El Döviz Gizlilik ve KVKK"
-msgstr "El Doviz Privacy & KVKK"
+msgid "LeDoviz Gizlilik ve KVKK"
+msgstr "LeDoviz Privacy & KVKK"
 
 msgid "Açıklama Metni"
 msgstr "Disclosure Text"
@@ -237,8 +237,8 @@ msgstr "Unable to load rates."
 msgid "Kullanım Rehberi"
 msgstr "Usage Guide"
 
-msgid "El Döviz eklentisinin tüm özelliklerini, kısa kodlarını ve entegrasyonlarını bu sayfada bulabilirsiniz."
-msgstr "You can find all the features, shortcodes, and integrations of the El Doviz plugin on this page."
+msgid "LeDoviz eklentisinin tüm özelliklerini, kısa kodlarını ve entegrasyonlarını bu sayfada bulabilirsiniz."
+msgstr "You can find all the features, shortcodes, and integrations of the LeDoviz plugin on this page."
 
 msgid "Kısa Kodlar (Shortcodes)"
 msgstr "Shortcodes"
@@ -282,8 +282,8 @@ msgstr "Shows the KVKK warning text stating that no personal visitor data is col
 msgid "Elementor Entegrasyonu"
 msgstr "Elementor Integration"
 
-msgid "Elementor Düzenleyicide \"El Döviz\" kategorisi altındaki bileşenleri sürükleyip bırakarak sayfalarınıza ekleyebilirsiniz."
-msgstr "You can add components to your pages by dragging and dropping widgets under the 'El Doviz' category in the Elementor Editor."
+msgid "Elementor Düzenleyicide \"LeDoviz\" kategorisi altındaki bileşenleri sürükleyip bırakarak sayfalarınıza ekleyebilirsiniz."
+msgstr "You can add components to your pages by dragging and dropping widgets under the 'LeDoviz' category in the Elementor Editor."
 
 msgid "Gelişmiş liste veya ızgara düzeni seçimi. Stil sekmesinden etiket ve değerlerin tipografi, renk, kenarlık ve kutu gölgesi ayarlarını dinamik olarak değiştirebilirsiniz."
 msgstr "Advanced list or grid layout selection. Dynamically customize label and value typography, colors, borders, and box shadows from the Style tab."
@@ -306,8 +306,8 @@ msgstr "Easily insert the 'Exchange Rates' or 'Live Ticker' blocks in the block 
 msgid "Yan Menü Bileşenleri (Widgets)"
 msgstr "Sidebar Widgets"
 
-msgid "Görünüm > Bileşenler sayfasına giderek \"El Döviz Yan Menü Bileşeni\"ni sitenizin aktif yan menü alanlarına (sidebar) ekleyebilirsiniz."
-msgstr "Add the 'El Doviz Sidebar Widget' to your widget areas by navigating to Appearance > Widgets."
+msgid "Görünüm > Bileşenler sayfasına giderek \"LeDoviz Yan Menü Bileşeni\"ni sitenizin aktif yan menü alanlarına (sidebar) ekleyebilirsiniz."
+msgstr "Add the 'LeDoviz Sidebar Widget' to your widget areas by navigating to Appearance > Widgets."
 
 msgid "Geliştirici Filtreleri (Filters)"
 msgstr "Developer Filters"
@@ -321,8 +321,8 @@ msgstr "Used to customize the TCMB XML data source API URL."
 msgid "BIST 100 API veri kaynağı adresini değiştirmek için kullanılır."
 msgstr "Used to customize the BIST 100 API data source URL."
 
-msgid "El Döviz Kontrol Paneli"
-msgstr "El Doviz Control Panel"
+msgid "LeDoviz Kontrol Paneli"
+msgstr "LeDoviz Control Panel"
 
 msgid "Yerleşim ve Boşluklar"
 msgstr "Layout and Spacing"
@@ -348,8 +348,8 @@ msgstr "Symbol and Value Gap"
 msgid "KVKK ve Veri Güvenliği Bildirimi:"
 msgstr "KVKK & Data Security Notice:"
 
-msgid "Bu eklenti, Türkiye Cumhuriyeti Merkez Bankası (TCMB) verilerini kullanarak döviz kurlarını gösterir. Eklenti aracılığıyla ziyaretçilerinize ait hiçbir kişisel veri toplanmaz, işlenmez veya üçüncü şahıslarla paylaşılmaz. KVKK uyumluluğu için sayfalarınıza \"El Döviz Gizlilik ve KVKK\" bileşenini veya [el_doviz_privacy] kısa kodunu ekleyebilirsiniz."
-msgstr "This plugin displays exchange rates using data from the Central Bank of the Republic of Turkey (TCMB). No personal data belonging to your visitors is collected, processed, or shared with third parties through this plugin. For KVKK compliance, you can add the 'El Doviz Privacy & KVKK' widget or the [el_doviz_privacy] shortcode to your pages."
+msgid "Bu eklenti, Türkiye Cumhuriyeti Merkez Bankası (TCMB) verilerini kullanarak döviz kurlarını gösterir. Eklenti aracılığıyla ziyaretçilerinize ait hiçbir kişisel veri toplanmaz, işlenmez veya üçüncü şahıslarla paylaşılmaz. KVKK uyumluluğu için sayfalarınıza \"LeDoviz Gizlilik ve KVKK\" bileşenini veya [ledoviz_turkish_exchange_rates_privacy] kısa kodunu ekleyebilirsiniz."
+msgstr "This plugin displays exchange rates using data from the Central Bank of the Republic of Turkey (TCMB). No personal data belonging to your visitors is collected, processed, or shared with third parties through this plugin. For KVKK compliance, you can add the 'LeDoviz Privacy & KVKK' widget or the [ledoviz_turkish_exchange_rates_privacy] shortcode to your pages."
 
 
 
