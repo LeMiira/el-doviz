@@ -115,8 +115,8 @@ Temanızdaki CSS değişkenlerini kullanarak renkleri doğrudan özelleştirin:
 * **Canlı Kur Bandı** - Temiz, kayan yazı şeklinde kur bandı.
 
 #### 3. Elementor Bileşenleri (Widgets)
-* **El Döviz Kurları** - Satır boşluğu, hizalama ve simge-değer arası mesafe için gelişmiş kaydırıcı ayarları içerir.
-* **El Döviz Canlı Kur Bandı** - Özelleştirilebilir kayan yazı bandı.
+* **LeDoviz Kurları** - Satır boşluğu, hizalama ve simge-değer arası mesafe için gelişmiş kaydırıcı ayarları içerir.
+* **LeDoviz Canlı Kur Bandı** - Özelleştirilebilir kayan yazı bandı.
 * **Gizlilik ve KVKK** - Altın renkli kilit simgeli KVKK beyan metni bloğu.
 
 ### 🛠️ Geliştirici Kancaları ve Filtreleri
@@ -145,7 +145,7 @@ add_filter( 'ledoviz_turkish_exchange_rates_api_endpoints', function( $endpoints
 3. **Activate the plugin / Eklentiyi etkinleştirin**:
    WordPress panelinizden eklentiyi aktifleştirin.
 4. **Configure / Yapılandırın**:
-   **El Döviz** yönetim panelinden ayarlarınızı özelleştirin.
+   **LeDoviz** yönetim panelinden ayarlarınızı özelleştirin.
 
 ## Screenshots
 
