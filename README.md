@@ -13,7 +13,7 @@
 <a name="english"></a>
 ## English
 
-**LeDoviz - Turkish Exchange Rates** is a premium, lightweight, and high-performance WordPress plugin designed to seamlessly display Turkish Central Bank (TCMB) exchange rates. It features native support for Elementor widgets, Gutenberg blocks, responsive sidebars, shortcodes, and scrolling marquees.
+**[WordPress plugin]LeDoviz - Turkish Exchange Rates** is a premium, lightweight, and high-performance WordPress plugin designed to seamlessly display Turkish Central Bank (TCMB) exchange rates. It features native support for Elementor widgets, Gutenberg blocks, responsive sidebars, shortcodes, and scrolling marquees.
 
 ### ✨ Features
 - **🚀 Multiple Display Options**: Grid, List, Scrolling Ticker, Sidebar, Header, and Footer display variations.
