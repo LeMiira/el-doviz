@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: LeDoviz - Turkish Exchange Rates
- * Plugin URI: https://github.com/LeMiira/ledoviz-turkish-exchange-rates
+ * Plugin URI: https://github.com/LeMiira/Le-Doviz
  * Description: Lightweight Turkish exchange rates, plugin for WordPress with Elementor, Gutenberg, shortcode, and widget support.
  * Version: 1.0.0
  * Author: Mira

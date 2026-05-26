@@ -135,7 +135,7 @@ add_filter( 'ledoviz_turkish_exchange_rates_api_endpoints', function( $endpoints
 1. **Clone the repository / Depoyu klonlayın**:
    ```bash
    cd wp-content/plugins
-   git clone https://github.com/LeMiira/ledoviz-turkish-exchange-rates.git
+   git clone https://github.com/LeMiira/Le-Doviz.git
    ```
 2. **Generate the autoloader / Composer yüklemesi**:
    ```bash
