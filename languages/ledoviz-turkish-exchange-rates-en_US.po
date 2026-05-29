@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: LeDoviz 1.0.0\n"
-"Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2026-05-25 12:00+0300\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/El Doviz\n"
+"POT-Creation-Date: 2026-05-29T14:03:28+00:00\n"
 "PO-Revision-Date: 2026-05-25 12:00+0300\n"
 "Last-Translator: Miiiira\n"
 "Language-Team: English\n"
@@ -12,345 +12,744 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-msgid "LeDoviz eklenti seçenekleri"
-msgstr "LeDoviz plugin options"
-
-msgid "Genel Ayarlar"
-msgstr "General Settings"
-
-msgid "LeDoviz eklentisinin genel davranışını yapılandırın."
-msgstr "Configure the general behavior of the LeDoviz plugin."
-
-msgid "Üst Bilgi Bandını Etkinleştir"
-msgstr "Enable Header Ticker"
-
-msgid "Hata Ayıklama Modu"
-msgstr "Debug Mode"
-
-msgid "Site üst bilgisinde döviz kuru bandını göster."
-msgstr "Show the exchange rate ticker in the site header."
-
-msgid "Hata ayıklama günlüğünü etkinleştir (uploads/ledoviz-turkish-exchange-rates/logs/debug.log dosyasına yazar)."
-msgstr "Enable debug logging (writes to uploads/ledoviz-turkish-exchange-rates/logs/debug.log)."
-
-msgid "LeDoviz"
-msgstr "LeDoviz"
-
-msgid "Panel"
-msgstr "Dashboard"
-
-msgid "Araçlar"
-msgstr "Tools"
-
-msgid "Günlükler"
-msgstr "Logs"
-
-msgid "Yetersiz yetki."
-msgstr "Insufficient permissions."
-
-msgid "LeDoviz Yönetim Paneli"
-msgstr "LeDoviz Dashboard"
-
-msgid "Çok Yakında"
-msgstr "Coming Soon"
-
-msgid "Bu bölüm gelecek sürümlerde uygulanacaktır."
-msgstr "This section will be implemented in future releases."
-
-msgid "Eklenti Araçları"
-msgstr "Plugin Tools"
-
-msgid "Teşhis ve yönetimsel eylemleri gerçekleştirin."
-msgstr "Perform diagnostics and administrative actions."
-
-msgid "Önbellek başarıyla temizlendi."
-msgstr "Transient cache cleared successfully."
-
-msgid "Teşhis ve Testler"
-msgstr "Diagnostics"
-
-msgid "TCMB API uç noktalarından anında yeni kurların alınması için önbelleğin süresini dolmaya zorlayın."
-msgstr "Force cache expiration to request immediate fresh rates from TCMB API endpoints."
-
-msgid "Önbelleği Temizle"
-msgstr "Clear Cache"
-
-msgid "Eklenti Günlükleri"
-msgstr "Plugin Logs"
-
-msgid "Hata ayıklama günlüğü dosyası içeriklerini görüntüleyin. Ayarlar altında Hata Ayıklama Modu etkin olmalıdır."
-msgstr "View the debug log file contents. Debug mode must be active under settings."
-
-msgid "Hata Ayıklama Günlüğü Görüntüleyici"
-msgstr "Debug Log Viewer"
-
-msgid "Kayıtlı günlük bulunmamaktadır veya Hata Ayıklama Modu devre dışıdır."
-msgstr "No logs available or Debug Mode is disabled."
-
-msgid "LeDoviz Yan Menü Bileşeni"
-msgstr "LeDoviz Sidebar Widget"
-
-msgid "Döviz kurlarını yan menüde gösterir."
-msgstr "Shows exchange rates in the sidebar."
-
-msgid "Döviz Kurları"
-msgstr "Exchange Rates"
-
-msgid "Başlık:"
-msgstr "Title:"
-
-msgid "Para Birimleri (virgülle ayrılmış):"
-msgstr "Currencies (comma separated):"
-
-msgid "LeDoviz Kurları ve Endeksler"
-msgstr "LeDoviz Rates & Indices"
-
-msgid "İçerik"
-msgstr "Content"
-
-msgid "Para Birimi/Endeks Seçin"
-msgstr "Select Currencies/Indices"
-
-msgid "USD (Amerikan Doları)"
-msgstr "USD (US Dollar)"
-
-msgid "EUR (Euro)"
-msgstr "EUR (Euro)"
-
-msgid "GBP (İngiliz Sterlini)"
-msgstr "GBP (British Pound)"
-
-msgid "CHF (İsviçre Frangı)"
-msgstr "CHF (Swiss Franc)"
-
-msgid "CAD (Kanada Doları)"
-msgstr "CAD (Canadian Dollar)"
-
-msgid "AUD (Avustralya Doları)"
-msgstr "AUD (Australian Dollar)"
-
-msgid "DKK (Danimarka Kronu)"
-msgstr "DKK (Danish Krone)"
-
-msgid "SEK (İsveç Kronu)"
-msgstr "SEK (Swedish Krona)"
-
-msgid "NOK (Norveç Kronu)"
-msgstr "NOK (Norwegian Krone)"
-
-msgid "SAR (Suudi Arabistan Riyali)"
-msgstr "SAR (Saudi Riyal)"
-
-msgid "JPY (Japon Yeni)"
-msgstr "JPY (Japanese Yen)"
-
-msgid "RUB (Rus Rublesi)"
-msgstr "RUB (Russian Ruble)"
-
-msgid "KWD (Kuveyt Dinarı)"
-msgstr "KWD (Kuwaiti Dinar)"
-
-msgid "BIST 100 Endeksi"
-msgstr "BIST 100 Index"
-
-msgid "Görünüm"
-msgstr "Layout"
-
-msgid "Liste"
-msgstr "List"
-
-msgid "Izgara"
-msgstr "Grid"
-
-msgid "Stil Seçenekleri"
-msgstr "Style Options"
-
-msgid "Varsayılan Metin Rengi"
-msgstr "Default Text Color"
-
-msgid "Etiket Rengi"
-msgstr "Label Color"
-
-msgid "Etiket Tipografisi"
-msgstr "Label Typography"
-
-msgid "Değer Rengi"
-msgstr "Value Color"
-
-msgid "Değer Tipografisi"
-msgstr "Value Typography"
-
-msgid "Arka Plan Rengi"
-msgstr "Background Color"
-
-msgid "Kapsayıcı Tipografisi"
-msgstr "Container Typography"
-
-msgid "İç Boşluk (Padding)"
-msgstr "Padding"
-
-msgid "Kenar Yumuşatma (Border Radius)"
-msgstr "Border Radius"
-
-msgid "BIST 100"
-msgstr "BIST 100"
-
-msgid "LeDoviz Canlı Kur Bandı"
-msgstr "LeDoviz Live Ticker"
-
-msgid "Bant Hızı (ms)"
-msgstr "Ticker Speed (ms)"
-
-msgid "LeDoviz Gizlilik ve KVKK"
-msgstr "LeDoviz Privacy & KVKK"
-
-msgid "Açıklama Metni"
-msgstr "Disclosure Text"
-
-msgid "Hizalama"
-msgstr "Alignment"
-
-msgid "Sol"
-msgstr "Left"
-
-msgid "Orta"
-msgstr "Center"
-
-msgid "Sağ"
-msgstr "Right"
-
-msgid "Metin Rengi"
-msgstr "Text Color"
-
+#. Plugin Name of the plugin
+#: ledoviz-turkish-exchange-rates.php
+msgid "LeDoviz - Turkish Exchange Rates"
+msgstr "LeDoviz - Turkish Exchange Rates"
+
+#. Plugin URI of the plugin
+#: ledoviz-turkish-exchange-rates.php
+msgid "https://github.com/LeMiira/Le-Doviz"
+msgstr "https://github.com/LeMiira/Le-Doviz"
+
+#. Description of the plugin
+#: ledoviz-turkish-exchange-rates.php
+msgid ""
+"Lightweight Turkish exchange rates, plugin for WordPress with Elementor, "
+"Gutenberg, shortcode, and widget support."
+msgstr ""
+
+#. Author of the plugin
+#: ledoviz-turkish-exchange-rates.php
+msgid "Mira"
+msgstr "Mira"
+
+#. Author URI of the plugin
+#: ledoviz-turkish-exchange-rates.php
+msgid "https://miiiira.com"
+msgstr "https://miiiira.com"
+
+#: ledoviz-turkish-exchange-rates.php:48
 msgid "Donate"
 msgstr "Donate"
 
-msgid "Bu sitede gösterilen tüm döviz kurları ve finansal veriler, Türkiye Cumhuriyet Merkez Bankası (TCMB) tarafından sağlanan halka açık verilerden alınmakta olup yalnızca bilgilendirme amaçlıdır. Verilerin kesin doğruluğu veya anlık güncelliği garanti edilmez. Kişisel verileriniz KVKK kapsamında korunmakta olup, bu eklenti aracılığıyla hiçbir kişisel ziyaretçi verisi toplanmamakta veya işlenmemektedir."
-msgstr "All exchange rates and financial data displayed on this site are fetched from public data sources (TCMB) and are for informational purposes only. We do not guarantee the absolute accuracy or real-time updates of the rates. This plugin does not collect or process any personal user data under privacy regulations."
+#: src/Admin/Page/LogsPage.php:14
+msgid "Eklenti Günlükleri"
+msgstr "Plugin Logs"
 
-msgid "Döviz kurları yüklenemedi."
-msgstr "Unable to load exchange rates."
+#: src/Admin/Page/LogsPage.php:15
+msgid ""
+"Hata ayıklama günlüğü dosyası içeriklerini görüntüleyin. Ayarlar altında "
+"Hata Ayıklama Modu etkin olmalıdır."
+msgstr ""
+"View the debug log file contents. Debug mode must be active under settings."
 
-msgid "Kurlar yüklenemedi."
-msgstr "Unable to load rates."
+#: src/Admin/Page/LogsPage.php:21
+msgid "Hata Ayıklama Günlüğü Görüntüleyici"
+msgstr "Debug Log Viewer"
 
-msgid "Kullanım Rehberi"
-msgstr "Usage Guide"
+#: src/Admin/Page/LogsPage.php:29
+msgid "Kayıtlı günlük bulunmamaktadır veya Hata Ayıklama Modu devre dışıdır."
+msgstr "No logs available or Debug Mode is disabled."
 
-msgid "LeDoviz eklentisinin tüm özelliklerini, kısa kodlarını ve entegrasyonlarını bu sayfada bulabilirsiniz."
-msgstr "You can find all the features, shortcodes, and integrations of the LeDoviz plugin on this page."
+#: src/Admin/Settings.php:23
+#, fuzzy
+msgid "El Döviz eklenti seçenekleri"
+msgstr "LeDoviz plugin options"
 
-msgid "Kısa Kodlar (Shortcodes)"
-msgstr "Shortcodes"
+#: src/Admin/Settings.php:30 src/Admin/Settings.php:167
+msgid "Genel Ayarlar"
+msgstr "General Settings"
 
-msgid "Eklentinin sunduğu özellikleri herhangi bir yazı veya sayfaya eklemek için aşağıdaki kısa kodları kullanabilirsiniz."
-msgstr "You can use the following shortcodes to add the plugin's features to any post or page."
+#: src/Admin/Settings.php:32
+#, fuzzy
+msgid "El Döviz eklentisinin genel davranışını yapılandırın."
+msgstr "Configure the general behavior of the LeDoviz plugin."
 
-msgid "Döviz Kurları Listesi"
-msgstr "Exchange Rates List"
+#: src/Admin/Settings.php:38
+msgid "Üst Bilgi Bandını Etkinleştir"
+msgstr "Enable Header Ticker"
 
-msgid "Belirtilen para birimlerini ve endeksleri liste veya ızgara biçiminde gösterir."
-msgstr "Displays specified currencies and indices in list or grid layout."
+#: src/Admin/Settings.php:47
+msgid "Hata Ayıklama Modu"
+msgstr "Debug Mode"
 
-msgid "Parametreler:"
-msgstr "Parameters:"
+#: src/Admin/Settings.php:56
+msgid "Dil / Language"
+msgstr "Language"
 
-msgid "Gösterilecek para birimleri (örn: usd,eur,gbp,bist)"
-msgstr "Currencies to display (e.g. usd,eur,gbp,bist)"
+#: src/Admin/Settings.php:90
+msgid "Site üst bilgisinde döviz kuru bandını göster."
+msgstr "Show the exchange rate ticker in the site header."
 
-msgid "Görünüm biçimi (list veya grid)"
-msgstr "Layout format (list or grid)"
+#: src/Admin/Settings.php:98
+msgid ""
+"Hata ayıklama günlüğünü etkinleştir (uploads/ledoviz-turkish-exchange-rates/"
+"logs/debug.log dosyasına yazar)."
+msgstr ""
+"Enable debug logging (writes to uploads/ledoviz-turkish-exchange-rates/logs/"
+"debug.log)."
 
-msgid "Canlı Kur Bandı"
-msgstr "Live Ticker"
+#: src/Admin/Settings.php:108
+msgid ""
+"Eklentinin önyüz ve panel dilini seçin. / Select the frontend and dashboard "
+"language of the plugin."
+msgstr ""
 
-msgid "Sitenin üst veya alt kısmında kayan döviz kurları bandı görüntüler."
-msgstr "Displays a scrolling exchange rates ticker banner at the top or bottom of your site."
+#: src/Admin/Settings.php:116 src/Admin/Settings.php:117
+msgid "El Döviz"
+msgstr "El Doviz"
 
-msgid "Kayan bantta yer alacak birimler (örn: usd,eur,bist)"
-msgstr "Currencies to display in the ticker (e.g. usd,eur,bist)"
+#: src/Admin/Settings.php:124
+msgid "Panel"
+msgstr "Dashboard"
 
-msgid "Milisaniye cinsinden döngü hızı (örn: 5000)"
-msgstr "Scrolling speed in milliseconds (e.g. 5000)"
+#: src/Admin/Settings.php:125
+msgid "Günlükler"
+msgstr "Logs"
 
-msgid "Gizlilik ve KVKK Açıklaması"
-msgstr "Privacy & KVKK Disclosure"
+#: src/Admin/Settings.php:130
+msgid "Yetersiz yetki."
+msgstr "Insufficient permissions."
 
-msgid "Kullanıcılara eklenti aracılığıyla hiçbir kişisel verinin işlenmediğini belirten KVKK uyarı metnini gösterir."
-msgstr "Shows the KVKK warning text stating that no personal visitor data is collected or processed by this plugin."
+#: src/Admin/Settings.php:137
+msgid "Önbellek başarıyla temizlendi."
+msgstr "Transient cache cleared successfully."
 
-msgid "Elementor Entegrasyonu"
-msgstr "Elementor Integration"
-
-msgid "Elementor Düzenleyicide \"LeDoviz\" kategorisi altındaki bileşenleri sürükleyip bırakarak sayfalarınıza ekleyebilirsiniz."
-msgstr "You can add components to your pages by dragging and dropping widgets under the 'LeDoviz' category in the Elementor Editor."
-
-msgid "Gelişmiş liste veya ızgara düzeni seçimi. Stil sekmesinden etiket ve değerlerin tipografi, renk, kenarlık ve kutu gölgesi ayarlarını dinamik olarak değiştirebilirsiniz."
-msgstr "Advanced list or grid layout selection. Dynamically customize label and value typography, colors, borders, and box shadows from the Style tab."
-
-msgid "Canlı kurları kayan yazı bandı şeklinde eklemenizi sağlar. Kayan yazı hızı ve yazı tipi renkleri düzenlenebilir."
-msgstr "Allows adding live rates as a scrolling marquee banner. Customize ticker speed, font styles, and colors."
-
-msgid "Gizlilik ve veri sorumluluğu beyan metnini sayfalarınıza ekler. Yazı rengi, arka planı ve kutu tasarımı özelleştirilebilir."
-msgstr "Adds privacy and data compliance disclaimer text to your pages. Customize text color, background, and container styles."
-
-msgid "Gutenberg ve Yan Menü Bileşenleri"
-msgstr "Gutenberg & Sidebar Widgets"
-
-msgid "Gutenberg Blokları"
-msgstr "Gutenberg Blocks"
-
-msgid "WordPress blok düzenleyicisinde \"Döviz Kurları\" veya \"Canlı Kur Bandı\" bloklarını aratarak yazılarınıza kolayca yerleştirebilirsiniz."
-msgstr "Easily insert the 'Exchange Rates' or 'Live Ticker' blocks in the block editor (Gutenberg) to embed rates."
-
-msgid "Yan Menü Bileşenleri (Widgets)"
-msgstr "Sidebar Widgets"
-
-msgid "Görünüm > Bileşenler sayfasına giderek \"LeDoviz Yan Menü Bileşeni\"ni sitenizin aktif yan menü alanlarına (sidebar) ekleyebilirsiniz."
-msgstr "Add the 'LeDoviz Sidebar Widget' to your widget areas by navigating to Appearance > Widgets."
-
-msgid "Geliştirici Filtreleri (Filters)"
-msgstr "Developer Filters"
-
-msgid "Yazılımcılar ve temalar için sunulan kanca (filter) kütüphanesi:"
-msgstr "Filter hooks library provided for developers and themes:"
-
-msgid "TCMB XML veri kaynağı adresini değiştirmek için kullanılır."
-msgstr "Used to customize the TCMB XML data source API URL."
-
-msgid "BIST 100 API veri kaynağı adresini değiştirmek için kullanılır."
-msgstr "Used to customize the BIST 100 API data source URL."
-
-msgid "LeDoviz Kontrol Paneli"
+#: src/Admin/Settings.php:148
+#, fuzzy
+msgid "El Döviz Kontrol Paneli"
 msgstr "LeDoviz Control Panel"
 
-msgid "Yerleşim ve Boşluklar"
-msgstr "Layout and Spacing"
-
-msgid "Satır Boşluğu (Space between items)"
-msgstr "Row Spacing (Space between items)"
-
-msgid "Birim Hizalaması (Alignment)"
-msgstr "Item Alignment (Alignment)"
-
-msgid "Ayrık (Left / Right)"
-msgstr "Space-Between (Left / Right)"
-
-msgid "Bitişik (Compact)"
-msgstr "Compact"
-
-msgid "Merkez"
-msgstr "Center"
-
-msgid "Sembol ve Değer Boşluğu (Gap)"
-msgstr "Symbol and Value Gap"
-
+#: src/Admin/Settings.php:159
 msgid "KVKK ve Veri Güvenliği Bildirimi:"
 msgstr "KVKK & Data Security Notice:"
 
-msgid "Bu eklenti, Türkiye Cumhuriyeti Merkez Bankası (TCMB) verilerini kullanarak döviz kurlarını gösterir. Eklenti aracılığıyla ziyaretçilerinize ait hiçbir kişisel veri toplanmaz, işlenmez veya üçüncü şahıslarla paylaşılmaz. KVKK uyumluluğu için sayfalarınıza \"LeDoviz Gizlilik ve KVKK\" bileşenini veya [ledoviz_turkish_exchange_rates_privacy] kısa kodunu ekleyebilirsiniz."
-msgstr "This plugin displays exchange rates using data from the Central Bank of the Republic of Turkey (TCMB). No personal data belonging to your visitors is collected, processed, or shared with third parties through this plugin. For KVKK compliance, you can add the 'LeDoviz Privacy & KVKK' widget or the [ledoviz_turkish_exchange_rates_privacy] shortcode to your pages."
+#: src/Admin/Settings.php:160
+#, fuzzy
+msgid ""
+"Bu eklenti, Türkiye Cumhuriyeti Merkez Bankası (TCMB) verilerini kullanarak "
+"döviz kurlarını gösterir. Eklenti aracılığıyla ziyaretçilerinize ait hiçbir "
+"kişisel veri toplanmaz, işlenmez veya üçüncü şahıslarla paylaşılmaz. KVKK "
+"uyumluluğu için sayfalarınıza \"El Döviz Gizlilik ve KVKK\" bileşenini veya "
+"[ledoviz_turkish_exchange_rates_privacy] kısa kodunu ekleyebilirsiniz."
+msgstr ""
+"This plugin displays exchange rates using data from the Central Bank of the "
+"Republic of Turkey (TCMB). No personal data belonging to your visitors is "
+"collected, processed, or shared with third parties through this plugin. For "
+"KVKK compliance, you can add the 'LeDoviz Privacy & KVKK' widget or the "
+"[ledoviz_turkish_exchange_rates_privacy] shortcode to your pages."
 
+#: src/Admin/Settings.php:166
+msgid "Kullanım Rehberi"
+msgstr "Usage Guide"
 
+#: src/Admin/Settings.php:168
+msgid "Araçlar"
+msgstr "Tools"
 
+#: src/Admin/Settings.php:176
+#, fuzzy
+msgid ""
+"El Döviz eklentisinin tüm özelliklerini, kısa kodlarını ve entegrasyonlarını "
+"bu sayfada bulabilirsiniz."
+msgstr ""
+"You can find all the features, shortcodes, and integrations of the LeDoviz "
+"plugin on this page."
 
+#: src/Admin/Settings.php:182
+msgid "Kısa Kodlar (Shortcodes)"
+msgstr "Shortcodes"
+
+#: src/Admin/Settings.php:183
+msgid ""
+"Eklentinin sunduğu özellikleri herhangi bir yazı veya sayfaya eklemek için "
+"aşağıdaki kısa kodları kullanabilirsiniz."
+msgstr ""
+"You can use the following shortcodes to add the plugin's features to any "
+"post or page."
+
+#: src/Admin/Settings.php:187
+msgid "Döviz Kurları Listesi"
+msgstr "Exchange Rates List"
+
+#: src/Admin/Settings.php:189
+msgid ""
+"Belirtilen para birimlerini ve endeksleri liste veya ızgara biçiminde "
+"gösterir."
+msgstr "Displays specified currencies and indices in list or grid layout."
+
+#: src/Admin/Settings.php:190 src/Admin/Settings.php:199
+msgid "Parametreler:"
+msgstr "Parameters:"
+
+#: src/Admin/Settings.php:191
+msgid "Gösterilecek para birimleri (örn: usd,eur,gbp,bist)"
+msgstr "Currencies to display (e.g. usd,eur,gbp,bist)"
+
+#: src/Admin/Settings.php:192
+msgid "Görünüm biçimi (list veya grid)"
+msgstr "Layout format (list or grid)"
+
+#: src/Admin/Settings.php:196
+msgid "Canlı Kur Bandı"
+msgstr "Live Ticker"
+
+#: src/Admin/Settings.php:198
+msgid "Sitenin üst veya alt kısmında kayan döviz kurları bandı görüntüler."
+msgstr ""
+"Displays a scrolling exchange rates ticker banner at the top or bottom of "
+"your site."
+
+#: src/Admin/Settings.php:200
+msgid "Kayan bantta yer alacak birimler (örn: usd,eur,bist)"
+msgstr "Currencies to display in the ticker (e.g. usd,eur,bist)"
+
+#: src/Admin/Settings.php:201
+msgid "Milisaniye cinsinden döngü hızı (örn: 5000)"
+msgstr "Scrolling speed in milliseconds (e.g. 5000)"
+
+#: src/Admin/Settings.php:205
+msgid "Gizlilik ve KVKK Açıklaması"
+msgstr "Privacy & KVKK Disclosure"
+
+#: src/Admin/Settings.php:207
+msgid ""
+"Kullanıcılara eklenti aracılığıyla hiçbir kişisel verinin işlenmediğini "
+"belirten KVKK uyarı metnini gösterir."
+msgstr ""
+"Shows the KVKK warning text stating that no personal visitor data is "
+"collected or processed by this plugin."
+
+#: src/Admin/Settings.php:215
+msgid "Elementor Entegrasyonu"
+msgstr "Elementor Integration"
+
+#: src/Admin/Settings.php:216
+#, fuzzy
+msgid ""
+"Elementor Düzenleyicide \"El Döviz\" kategorisi altındaki bileşenleri "
+"sürükleyip bırakarak sayfalarınıza ekleyebilirsiniz."
+msgstr ""
+"You can add components to your pages by dragging and dropping widgets under "
+"the 'LeDoviz' category in the Elementor Editor."
+
+#: src/Admin/Settings.php:221 src/Elementor/ExchangeRatesWidget.php:23
+#, fuzzy
+msgid "El Döviz Kurları ve Endeksler"
+msgstr "LeDoviz Rates & Indices"
+
+#: src/Admin/Settings.php:222
+msgid ""
+"Gelişmiş liste veya ızgara düzeni seçimi. Stil sekmesinden etiket ve "
+"değerlerin tipografi, renk, kenarlık ve kutu gölgesi ayarlarını dinamik "
+"olarak değiştirebilirsiniz."
+msgstr ""
+"Advanced list or grid layout selection. Dynamically customize label and "
+"value typography, colors, borders, and box shadows from the Style tab."
+
+#: src/Admin/Settings.php:227 src/Elementor/TickerWidget.php:17
+#, fuzzy
+msgid "El Döviz Canlı Kur Bandı"
+msgstr "LeDoviz Live Ticker"
+
+#: src/Admin/Settings.php:228
+msgid ""
+"Canlı kurları kayan yazı bandı şeklinde eklemenizi sağlar. Kayan yazı hızı "
+"ve yazı tipi renkleri düzenlenebilir."
+msgstr ""
+"Allows adding live rates as a scrolling marquee banner. Customize ticker "
+"speed, font styles, and colors."
+
+#: src/Admin/Settings.php:233 src/Elementor/PrivacyWidget.php:23
+#, fuzzy
+msgid "El Döviz Gizlilik ve KVKK"
+msgstr "LeDoviz Privacy & KVKK"
+
+#: src/Admin/Settings.php:234
+msgid ""
+"Gizlilik ve veri sorumluluğu beyan metnini sayfalarınıza ekler. Yazı rengi, "
+"arka planı ve kutu tasarımı özelleştirilebilir."
+msgstr ""
+"Adds privacy and data compliance disclaimer text to your pages. Customize "
+"text color, background, and container styles."
+
+#: src/Admin/Settings.php:241 src/Elementor/TrendWidget.php:23
+#, fuzzy
+msgid "El Döviz Kurları ve Trendler"
+msgstr "LeDoviz Rates & Indices"
+
+#: src/Admin/Settings.php:242
+msgid ""
+"Para birimlerini dinamik yükseliş/düşüş okları (trend göstergeleri) ve yüzde "
+"değişimleriyle birlikte gösterir. Renkleri ve tasarımı tamamen "
+"özelleştirilebilir."
+msgstr ""
+
+#: src/Admin/Settings.php:250
+msgid "Gutenberg ve Yan Menü Bileşenleri"
+msgstr "Gutenberg & Sidebar Widgets"
+
+#: src/Admin/Settings.php:254
+msgid "Gutenberg Blokları"
+msgstr "Gutenberg Blocks"
+
+#: src/Admin/Settings.php:255
+msgid ""
+"WordPress blok düzenleyicisinde \"Döviz Kurları\" veya \"Canlı Kur Bandı\" "
+"bloklarını aratarak yazılarınıza kolayca yerleştirebilirsiniz."
+msgstr ""
+"Easily insert the 'Exchange Rates' or 'Live Ticker' blocks in the block "
+"editor (Gutenberg) to embed rates."
+
+#: src/Admin/Settings.php:259
+msgid "Yan Menü Bileşenleri (Widgets)"
+msgstr "Sidebar Widgets"
+
+#: src/Admin/Settings.php:260
+#, fuzzy
+msgid ""
+"Görünüm > Bileşenler sayfasına giderek \"El Döviz Yan Menü Bileşeni\"ni "
+"sitenizin aktif yan menü alanlarına (sidebar) ekleyebilirsiniz."
+msgstr ""
+"Add the 'LeDoviz Sidebar Widget' to your widget areas by navigating to "
+"Appearance > Widgets."
+
+#: src/Admin/Settings.php:268
+msgid "Geliştirici Filtreleri (Filters)"
+msgstr "Developer Filters"
+
+#: src/Admin/Settings.php:269
+msgid "Yazılımcılar ve temalar için sunulan kanca (filter) kütüphanesi:"
+msgstr "Filter hooks library provided for developers and themes:"
+
+#: src/Admin/Settings.php:271
+#, fuzzy
+msgid ""
+"TCMB ve BIST 100 API veri kaynağı adreslerini değiştirmek için kullanılır."
+msgstr "Used to customize the BIST 100 API data source URL."
+
+#: src/Admin/Settings.php:286
+msgid "Teşhis ve Testler"
+msgstr "Diagnostics"
+
+#: src/Admin/Settings.php:289
+msgid ""
+"TCMB API uç noktalarından anında yeni kurların alınması için önbelleğin "
+"süresini dolmaya zorlayın."
+msgstr ""
+"Force cache expiration to request immediate fresh rates from TCMB API "
+"endpoints."
+
+#: src/Admin/Settings.php:290
+msgid "Önbelleği Temizle"
+msgstr "Clear Cache"
+
+#: src/Admin/Settings.php:303
+msgid "Eklentiyi Destekleyin"
+msgstr "Support the Plugin"
+
+#: src/Admin/Settings.php:304
+msgid ""
+"El Döviz eklentisini beğendiyseniz, geliştirilmesine katkıda bulunmak ve "
+"yeni özelliklerin eklenmesini desteklemek için bağış yapabilirsiniz."
+msgstr ""
+
+#: src/Admin/Settings.php:310
+msgid "GitHub Sponsors"
+msgstr "GitHub Sponsors"
+
+#: src/Admin/Settings.php:316
+msgid "Buy Me a Coffee"
+msgstr "Buy Me a Coffee"
+
+#: src/Admin/Settings.php:324
+#, fuzzy
+msgid "Eklenti Bilgileri"
+msgstr "Plugin Logs"
+
+#: src/Admin/Settings.php:326
+msgid "Sürüm:"
+msgstr "Version:"
+
+#: src/Admin/Settings.php:327
+msgid "Geliştirici:"
+msgstr "Developer:"
+
+#: src/Admin/Settings.php:328
+msgid "Lisans:"
+msgstr "License:"
+
+#: src/Admin/Settings.php:329
+msgid "Veri Kaynağı:"
+msgstr "Data Source:"
+
+#: src/Admin/Settings.php:329
+msgid "TCMB (T.C. Merkez Bankası)"
+msgstr "CBRT (Central Bank of the Republic of Turkey)"
+
+#: src/Block/exchange-rates/render.php:19
+msgid "Döviz kurları yüklenemedi."
+msgstr "Unable to load exchange rates."
+
+#: src/Block/ticker/render.php:19
+msgid "Kurlar yüklenemedi."
+msgstr "Unable to load rates."
+
+#: src/Elementor/ExchangeRatesWidget.php:39 src/Elementor/PrivacyWidget.php:39
+#: src/Elementor/TickerWidget.php:33 src/Elementor/TrendWidget.php:39
+msgid "İçerik"
+msgstr "Content"
+
+#: src/Elementor/ExchangeRatesWidget.php:47 src/Elementor/TickerWidget.php:41
+#: src/Elementor/TrendWidget.php:47
+msgid "Para Birimi/Endeks Seçin"
+msgstr "Select Currencies/Indices"
+
+#: src/Elementor/ExchangeRatesWidget.php:52 src/Elementor/TickerWidget.php:46
+#: src/Elementor/TrendWidget.php:52
+msgid "USD (Amerikan Doları)"
+msgstr "USD (US Dollar)"
+
+#: src/Elementor/ExchangeRatesWidget.php:53 src/Elementor/TickerWidget.php:47
+#: src/Elementor/TrendWidget.php:53
+msgid "EUR (Euro)"
+msgstr "EUR (Euro)"
+
+#: src/Elementor/ExchangeRatesWidget.php:54 src/Elementor/TickerWidget.php:48
+#: src/Elementor/TrendWidget.php:54
+msgid "GBP (İngiliz Sterlini)"
+msgstr "GBP (British Pound)"
+
+#: src/Elementor/ExchangeRatesWidget.php:55 src/Elementor/TickerWidget.php:49
+#: src/Elementor/TrendWidget.php:55
+msgid "CHF (İsviçre Frangı)"
+msgstr "CHF (Swiss Franc)"
+
+#: src/Elementor/ExchangeRatesWidget.php:56 src/Elementor/TickerWidget.php:50
+#: src/Elementor/TrendWidget.php:56
+msgid "CAD (Kanada Doları)"
+msgstr "CAD (Canadian Dollar)"
+
+#: src/Elementor/ExchangeRatesWidget.php:57 src/Elementor/TickerWidget.php:51
+#: src/Elementor/TrendWidget.php:57
+msgid "AUD (Avustralya Doları)"
+msgstr "AUD (Australian Dollar)"
+
+#: src/Elementor/ExchangeRatesWidget.php:58 src/Elementor/TickerWidget.php:52
+#: src/Elementor/TrendWidget.php:58
+msgid "DKK (Danimarka Kronu)"
+msgstr "DKK (Danish Krone)"
+
+#: src/Elementor/ExchangeRatesWidget.php:59 src/Elementor/TickerWidget.php:53
+#: src/Elementor/TrendWidget.php:59
+msgid "SEK (İsveç Kronu)"
+msgstr "SEK (Swedish Krona)"
+
+#: src/Elementor/ExchangeRatesWidget.php:60 src/Elementor/TickerWidget.php:54
+#: src/Elementor/TrendWidget.php:60
+msgid "NOK (Norveç Kronu)"
+msgstr "NOK (Norwegian Krone)"
+
+#: src/Elementor/ExchangeRatesWidget.php:61 src/Elementor/TickerWidget.php:55
+#: src/Elementor/TrendWidget.php:61
+msgid "SAR (Suudi Arabistan Riyali)"
+msgstr "SAR (Saudi Riyal)"
+
+#: src/Elementor/ExchangeRatesWidget.php:62 src/Elementor/TickerWidget.php:56
+#: src/Elementor/TrendWidget.php:62
+msgid "JPY (Japon Yeni)"
+msgstr "JPY (Japanese Yen)"
+
+#: src/Elementor/ExchangeRatesWidget.php:63 src/Elementor/TickerWidget.php:57
+#: src/Elementor/TrendWidget.php:63
+msgid "RUB (Rus Rublesi)"
+msgstr "RUB (Russian Ruble)"
+
+#: src/Elementor/ExchangeRatesWidget.php:64 src/Elementor/TickerWidget.php:58
+#: src/Elementor/TrendWidget.php:64
+msgid "KWD (Kuveyt Dinarı)"
+msgstr "KWD (Kuwaiti Dinar)"
+
+#: src/Elementor/ExchangeRatesWidget.php:65 src/Elementor/TickerWidget.php:59
+#: src/Elementor/TrendWidget.php:65
+msgid "BIST 100 Endeksi"
+msgstr "BIST 100 Index"
+
+#: src/Elementor/ExchangeRatesWidget.php:74 src/Elementor/TrendWidget.php:74
+msgid "Görünüm"
+msgstr "Layout"
+
+#: src/Elementor/ExchangeRatesWidget.php:78 src/Elementor/TrendWidget.php:78
+msgid "Liste"
+msgstr "List"
+
+#: src/Elementor/ExchangeRatesWidget.php:79 src/Elementor/TrendWidget.php:79
+msgid "Izgara"
+msgstr "Grid"
+
+#: src/Elementor/ExchangeRatesWidget.php:90 src/Elementor/PrivacyWidget.php:88
+#: src/Elementor/TickerWidget.php:82 src/Elementor/TrendWidget.php:102
+msgid "Stil Seçenekleri"
+msgstr "Style Options"
+
+#: src/Elementor/ExchangeRatesWidget.php:98 src/Elementor/TrendWidget.php:110
+msgid "Varsayılan Metin Rengi"
+msgstr "Default Text Color"
+
+#: src/Elementor/ExchangeRatesWidget.php:109 src/Elementor/TrendWidget.php:121
+msgid "Etiket Rengi"
+msgstr "Label Color"
+
+#: src/Elementor/ExchangeRatesWidget.php:122 src/Elementor/TrendWidget.php:134
+msgid "Etiket Tipografisi"
+msgstr "Label Typography"
+
+#: src/Elementor/ExchangeRatesWidget.php:130 src/Elementor/TrendWidget.php:142
+msgid "Değer Rengi"
+msgstr "Value Color"
+
+#: src/Elementor/ExchangeRatesWidget.php:142 src/Elementor/TrendWidget.php:154
+msgid "Değer Tipografisi"
+msgstr "Value Typography"
+
+#: src/Elementor/ExchangeRatesWidget.php:150
+#: src/Elementor/PrivacyWidget.php:107 src/Elementor/TickerWidget.php:101
+#: src/Elementor/TrendWidget.php:186
+msgid "Arka Plan Rengi"
+msgstr "Background Color"
+
+#: src/Elementor/ExchangeRatesWidget.php:162
+msgid "Kapsayıcı Tipografisi"
+msgstr "Container Typography"
+
+#: src/Elementor/ExchangeRatesWidget.php:170
+#: src/Elementor/PrivacyWidget.php:126 src/Elementor/TrendWidget.php:197
+msgid "İç Boşluk (Padding)"
+msgstr "Padding"
+
+#: src/Elementor/ExchangeRatesWidget.php:190
+#: src/Elementor/PrivacyWidget.php:146 src/Elementor/TrendWidget.php:217
+msgid "Kenar Yumuşatma (Border Radius)"
+msgstr "Border Radius"
+
+#: src/Elementor/ExchangeRatesWidget.php:210
+msgid "Yerleşim ve Boşluklar"
+msgstr "Layout and Spacing"
+
+#: src/Elementor/ExchangeRatesWidget.php:219
+msgid "Satır Boşluğu (Space between items)"
+msgstr "Row Spacing (Space between items)"
+
+#: src/Elementor/ExchangeRatesWidget.php:243
+msgid "Birim Hizalaması (Alignment)"
+msgstr "Item Alignment (Alignment)"
+
+#: src/Elementor/ExchangeRatesWidget.php:247
+msgid "Ayrık (Left / Right)"
+msgstr "Space-Between (Left / Right)"
+
+#: src/Elementor/ExchangeRatesWidget.php:251
+msgid "Bitişik (Compact)"
+msgstr "Compact"
+
+#: src/Elementor/ExchangeRatesWidget.php:255
+msgid "Merkez"
+msgstr "Center"
+
+#: src/Elementor/ExchangeRatesWidget.php:269
+msgid "Sembol ve Değer Boşluğu (Gap)"
+msgstr "Symbol and Value Gap"
+
+#: src/Elementor/ExchangeRatesWidget.php:313 src/Elementor/TickerWidget.php:138
+#: src/Elementor/TrendWidget.php:300
+msgid "BIST 100"
+msgstr "BIST 100"
+
+#: src/Elementor/PrivacyWidget.php:44 src/Shortcode/ShortcodeGenerator.php:69
+msgid ""
+"Bu sitede gösterilen tüm döviz kurları ve finansal veriler, Türkiye "
+"Cumhuriyet Merkez Bankası (TCMB) tarafından sağlanan halka açık verilerden "
+"alınmakta olup yalnızca bilgilendirme amaçlıdır. Verilerin kesin doğruluğu "
+"veya anlık güncelliği garanti edilmez. Kişisel verileriniz KVKK kapsamında "
+"korunmakta olup, bu eklenti aracılığıyla hiçbir kişisel ziyaretçi verisi "
+"toplanmamakta veya işlenmemektedir."
+msgstr ""
+"All exchange rates and financial data displayed on this site are fetched "
+"from public data sources (TCMB) and are for informational purposes only. We "
+"do not guarantee the absolute accuracy or real-time updates of the rates. "
+"This plugin does not collect or process any personal user data under privacy "
+"regulations."
+
+#: src/Elementor/PrivacyWidget.php:49
+msgid "Açıklama Metni"
+msgstr "Disclosure Text"
+
+#: src/Elementor/PrivacyWidget.php:59
+msgid "Hizalama"
+msgstr "Alignment"
+
+#: src/Elementor/PrivacyWidget.php:63
+msgid "Sol"
+msgstr "Left"
+
+#: src/Elementor/PrivacyWidget.php:67
+msgid "Orta"
+msgstr "Center"
+
+#: src/Elementor/PrivacyWidget.php:71
+msgid "Sağ"
+msgstr "Right"
+
+#: src/Elementor/PrivacyWidget.php:96 src/Elementor/TickerWidget.php:90
+msgid "Metin Rengi"
+msgstr "Text Color"
+
+#: src/Elementor/TickerWidget.php:68
+msgid "Bant Hızı (ms)"
+msgstr "Ticker Speed (ms)"
+
+#: src/Elementor/TrendWidget.php:87
+msgid "Trend Oklarını Göster"
+msgstr "Show Trend Arrows"
+
+#: src/Elementor/TrendWidget.php:89
+msgid "Göster"
+msgstr "Show"
+
+#: src/Elementor/TrendWidget.php:90
+msgid "Gizle"
+msgstr "Hide"
+
+#: src/Elementor/TrendWidget.php:162
+msgid "Yükseliş Rengi (Trend Up)"
+msgstr "Trend Up Color"
+
+#: src/Elementor/TrendWidget.php:174
+msgid "Düşüş Rengi (Trend Down)"
+msgstr "Trend Down Color"
+
+#: src/Elementor/TrendWidget.php:237
+#, fuzzy
+msgid "Boşluk (Gap)"
+msgstr "Padding"
+
+#: src/REST/RatesController.php:36
+msgid "Data source (tcmb)."
+msgstr "Data source (tcmb)."
+
+#: src/Service/DataFetcher.php:47
+msgid "Invalid data source."
+msgstr "Invalid data source."
+
+#: src/Service/DataFetcher.php:68
+msgid "Unexpected HTTP response."
+msgstr "Unexpected HTTP response."
+
+#: src/Service/DataFetcher.php:100
+msgid "Failed to parse TCMB XML."
+msgstr "Failed to parse TCMB XML."
+
+#: src/Service/DataFetcher.php:113
+msgid "Invalid BIST JSON."
+msgstr "Invalid BIST JSON."
+
+#: src/Service/DataFetcher.php:132
+msgid "Unknown source for parsing."
+msgstr "Unknown source for parsing."
+
+#: src/Widget/FooterTickerWidget.php:15
+msgid "El Doviz Footer Ticker"
+msgstr "El Doviz Footer Ticker"
+
+#: src/Widget/FooterTickerWidget.php:16
+msgid "Shows a scrolling ticker of exchange rates in the footer."
+msgstr "Shows a scrolling ticker of exchange rates in the footer."
+
+#: src/Widget/FooterTickerWidget.php:25 src/Widget/HeaderTickerWidget.php:29
+msgid "Rates unavailable."
+msgstr "Rates unavailable."
+
+#: src/Widget/FooterTickerWidget.php:51 src/Widget/HeaderTickerWidget.php:58
+msgid "Currencies (comma separated)"
+msgstr "Currencies (comma separated)"
+
+#: src/Widget/HeaderTickerWidget.php:15
+msgid "El Doviz Header Ticker"
+msgstr "El Doviz Header Ticker"
+
+#: src/Widget/HeaderTickerWidget.php:16
+msgid "Shows a scrolling ticker of exchange rates in the header."
+msgstr "Shows a scrolling ticker of exchange rates in the header."
+
+#: src/Widget/SidebarWidget.php:15
+#, fuzzy
+msgid "El Döviz Yan Menü Bileşeni"
+msgstr "LeDoviz Sidebar Widget"
+
+#: src/Widget/SidebarWidget.php:16
+msgid "Döviz kurlarını yan menüde gösterir."
+msgstr "Shows exchange rates in the sidebar."
+
+#: src/Widget/SidebarWidget.php:41
+msgid "Döviz Kurları"
+msgstr "Exchange Rates"
+
+#: src/Widget/SidebarWidget.php:45
+msgid "Başlık:"
+msgstr "Title:"
+
+#: src/Widget/SidebarWidget.php:49
+msgid "Para Birimleri (virgülle ayrılmış):"
+msgstr "Currencies (comma separated):"
+
+#: src/Block/exchange-rates/block.json
+msgctxt "block title"
+msgid "Exchange Rates"
+msgstr "Exchange Rates"
+
+#: src/Block/exchange-rates/block.json
+msgctxt "block description"
+msgid "Displays selected Turkish exchange rates."
+msgstr "Displays selected Turkish exchange rates."
+
+#: src/Block/ticker/block.json
+msgctxt "block title"
+msgid "Live Ticker"
+msgstr "Live Ticker"
+
+#: src/Block/ticker/block.json
+msgctxt "block description"
+msgid "Displays a scrolling live ticker of selected rates."
+msgstr "Displays a scrolling live ticker of selected rates."
+
+#~ msgid "LeDoviz"
+#~ msgstr "LeDoviz"
+
+#~ msgid "LeDoviz Yönetim Paneli"
+#~ msgstr "LeDoviz Dashboard"
+
+#~ msgid "Çok Yakında"
+#~ msgstr "Coming Soon"
+
+#~ msgid "Bu bölüm gelecek sürümlerde uygulanacaktır."
+#~ msgstr "This section will be implemented in future releases."
+
+#~ msgid "Eklenti Araçları"
+#~ msgstr "Plugin Tools"
+
+#~ msgid "Teşhis ve yönetimsel eylemleri gerçekleştirin."
+#~ msgstr "Perform diagnostics and administrative actions."
+
+#~ msgid "TCMB XML veri kaynağı adresini değiştirmek için kullanılır."
+#~ msgstr "Used to customize the TCMB XML data source API URL."

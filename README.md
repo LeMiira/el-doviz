@@ -58,6 +58,7 @@ Customize colors directly using CSS variables in your theme:
 
 #### 3. Elementor Widgets
 * **Exchange Rates** - Includes interactive sliders for Row Spacing, Alignment, and gaps.
+* **Exchange Rates & Trends** - Displays currencies with dynamic up/down arrows and percentage changes.
 * **Live Ticker** - Fully customizable scrolling marquee.
 * **Privacy & KVKK** - Golden lock-themed compliance disclaimer block.
 
@@ -118,6 +119,7 @@ Temanızdaki CSS değişkenlerini kullanarak renkleri doğrudan özelleştirin:
 
 #### 3. Elementor Bileşenleri (Widgets)
 * **LeDoviz Kurları** - Satır boşluğu, hizalama ve simge-değer arası mesafe için gelişmiş kaydırıcı ayarları içerir.
+* **LeDoviz Kurları ve Trendler** - Kurları dinamik oklar (yükseliş/düşüş) ve yüzde değişimleriyle birlikte gösterir.
 * **LeDoviz Canlı Kur Bandı** - Özelleştirilebilir kayan yazı bandı.
 * **Gizlilik ve KVKK** - Altın renkli kilit simgeli KVKK beyan metni bloğu.
 

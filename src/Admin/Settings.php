@@ -235,6 +235,14 @@ class Settings {
             echo '</div>';
 
             echo '</div>';
+
+            echo '<div class="ledoviz-turkish-exchange-rates-doc-card">';
+            echo '<span class="ledoviz-turkish-exchange-rates-badge">Elementor Widget</span>';
+            echo '<h3>' . esc_html__( 'El Döviz Kurları ve Trendler', 'ledoviz-turkish-exchange-rates' ) . '</h3>';
+            echo '<p>' . esc_html__( 'Para birimlerini dinamik yükseliş/düşüş okları (trend göstergeleri) ve yüzde değişimleriyle birlikte gösterir. Renkleri ve tasarımı tamamen özelleştirilebilir.', 'ledoviz-turkish-exchange-rates' ) . '</p>';
+            echo '</div>';
+
+            echo '</div>';
             echo '</div>';
 
             // Section 3: Gutenberg & Widgets

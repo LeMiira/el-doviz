@@ -1,7 +1,7 @@
 === LeDoviz - Turkish Exchange Rates ===
 Contributors: miiira
 Donate link: https://github.com/sponsors/LeMiira
-Tags: exchange-rates, tcmb, elementor, gutenberg, widget
+Tags: currency converter, exchange rates, turkey, elementor, gutenberg
 Requires at least: 6.0
 Tested up to: 7.0
 Requires PHP: 7.4
@@ -9,95 +9,138 @@ Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
-Lightweight Turkish exchange rates display with Elementor, Gutenberg, shortcodes, and widget support.
+Display live Turkish exchange rates using Gutenberg blocks, Elementor widgets, shortcodes, and classic WordPress widgets.
 
 == Description ==
-LeDoviz - Turkish Exchange Rates is a lightweight, modern, and fully secure WordPress plugin that displays Turkish exchange rates. It works with Gutenberg blocks, Elementor widgets, classic shortcodes, and header/footer widgets. All data sources are free public APIs – no API keys required.
 
-* Responsive mobile‑first design with Persian red accents and premium silver/white theme.
-* Accessible UI – ARIA live regions, keyboard navigation, and reduced‑motion support.
-* SEO‑friendly – schema.org `FinancialProduct` markup.
-* KVKK‑compliant privacy page and disclaimer.
-* Multisite compatible, translation ready (EN & TR), and fully PHPCS/WordPress‑Coding‑Standards compliant.
+LeDoviz is a lightweight WordPress plugin for displaying Turkish exchange rates on your website. It supports Gutenberg, Elementor, shortcodes, and traditional widgets while focusing on performance, accessibility, and ease of use.
+
+Features:
+
+* Display live exchange rates from trusted public sources.
+* Native Gutenberg block support.
+* Native Elementor widget support.
+* Shortcode support for easy placement anywhere.
+* Responsive mobile-friendly layouts.
+* Translation ready.
+* Accessibility-focused interface.
+* Lightweight and optimized for performance.
+* No API keys required.
 
 == External Services ==
-This plugin connects to external APIs to retrieve daily exchange rates and stock index values:
-1. Central Bank of the Republic of Turkey (TCMB) API (https://www.tcmb.gov.tr/kurlar/today.xml) is used to obtain daily currency exchange rates against the Turkish Lira. No personal visitor data is sent or stored. Data is fetched anonymously and cached locally on your server for 1 hour.
-   - TCMB Terms of Use: https://www.tcmb.gov.tr/wps/wcm/connect/tr/tcmb+tr/main+menu/yasal+uyari
-   - TCMB Privacy Policy: https://www.tcmb.gov.tr/wps/wcm/connect/tr/tcmb+tr/main+menu/yasal+uyari
-2. Bigpara (Hürriyet) API (https://bigpara.hurriyet.com.tr) is used to fetch the current BIST 100 stock index data. No personal visitor data is sent or stored. Data is cached locally on your server for 1 hour.
-   - Hürriyet Terms & Privacy: https://www.hurriyet.com.tr/veriler/politikamiz/
+
+This plugin connects to external services to retrieve financial data.
+
+= Central Bank of the Republic of Turkey (TCMB) =
+
+Used to obtain daily exchange rates against the Turkish Lira.
+
+* URL: https://www.tcmb.gov.tr/kurlar/today.xml
+* Data sent: None
+* Data received: Public exchange rate information
+* Data is cached locally for one hour
+
+Terms:
+https://www.tcmb.gov.tr/wps/wcm/connect/tr/tcmb+tr/main+menu/yasal+uyari
+
+= Bigpara (Hürriyet) =
+
+Used to retrieve BIST 100 index information.
+
+* URL: https://bigpara.hurriyet.com.tr
+* Data sent: None
+* Data received: Public market information
+* Data is cached locally for one hour
+
+Terms:
+https://www.hurriyet.com.tr/veriler/politikamiz/
 
 == Shortcodes ==
-Use the following shortcodes to display exchange rates and ticker feeds anywhere on your site:
-* `[ledoviz_turkish_exchange_rates_exchange_rates currencies="usd,eur,gbp" layout="list"]` - Displays a list or grid of currency exchange rates.
-  * **currencies**: Comma-separated ISO codes (default: `usd,eur,gbp`).
-  * **layout**: `list`, `grid` (default: `list`).
-  * **theme**: `auto`, `light`, `dark` (default: `auto`).
-* `[ledoviz_turkish_exchange_rates_ticker currencies="usd,eur,gbp" speed="5000"]` - Displays a scrolling marquee header/footer ticker.
-  * **currencies**: Comma-separated ISO codes (default: `usd,eur,gbp`).
-  * **speed**: Animation duration per item in ms (default: `5000`).
-* `[ledoviz_turkish_exchange_rates_privacy]` - Outputs standard disclosure/privacy text stating that the rates are provided for informational purposes only.
 
-== Gutenberg Blocks & Elementor Widgets ==
-The plugin includes native, high-performance editor integrations:
-* **Exchange Rates**: Drag and drop block/widget to display selected rates as a list or grid.
-* **Live Ticker**: Sliding marquee block/widget showing live exchange rates.
+Display exchange rates:
 
-== Custom Styling ==
-Colors can be customized in your theme stylesheet using CSS custom properties:
-`
-:root {
-  --ledoviz-turkish-exchange-rates-primary: #C41E3A; /* Persian Red accent color */
-  --ledoviz-turkish-exchange-rates-bg: #f8f9fa;      /* Silver/white container background */
-  --ledoviz-turkish-exchange-rates-text: #212529;    /* Text color */
-}
-`
+[ledoviz_turkish_exchange_rates_exchange_rates currencies="usd,eur,gbp" layout="list"]
 
-== Developer Filters ==
-* `ledoviz_turkish_exchange_rates_tcmb_url` - Filter the TCMB XML feed URL.
-* `ledoviz_turkish_exchange_rates_enqueue_assets` - Control when assets are enqueued on the frontend.
+Parameters:
 
-== Performance & Caching ==
-* **Cache Engine**: Utilizes the WordPress Transients API.
-* **Cache TTL**: Cached for 1 hour (3600 seconds) to prevent redundant external API hits.
-* **Asset Optimization**: CSS and JS files are enqueued conditionally (only when blocks, widgets, or shortcodes are present on the rendered page).
+* currencies - Comma separated currency codes.
+* layout - list or grid.
+* theme - auto, light, or dark.
 
-== Accessibility (a11y) ==
-* **ARIA Live Regions**: Tickers use `aria-live="polite"` so screen readers process updates gracefully.
-* **Motion Control**: Disables animations if `prefers-reduced-motion: reduce` is enabled at the OS/browser level.
-* **Keyboard Navigation**: Native tab indices and focus states are respected in all layouts.
+Display ticker:
+
+[ledoviz_turkish_exchange_rates_ticker currencies="usd,eur,gbp" speed="5000"]
+
+Parameters:
+
+* currencies - Comma separated currency codes.
+* speed - Animation speed in milliseconds.
+
+Display privacy notice:
+
+[ledoviz_turkish_exchange_rates_privacy]
+
+== Blocks and Widgets ==
+
+Gutenberg Block:
+
+* Exchange Rates
+* Live Ticker
+
+Elementor Widgets:
+
+* Exchange Rates
+* Live Ticker
+
+== Performance ==
+
+* Uses WordPress Transients API for caching.
+* Financial data is cached for one hour.
+* Frontend assets are loaded only when required.
+
+== Accessibility ==
+
+* Keyboard accessible controls.
+* Screen-reader friendly markup.
+* Reduced motion support where available.
 
 == Installation ==
-1. Upload the `ledoviz-turkish-exchange-rates` folder to the `/wp-content/plugins/` directory.
-2. Activate the plugin through the **Plugins** menu in WordPress.
-3. Configure settings under **El Doviz → Appearance** to match your site theme.
-4. Insert blocks/widgets/shortcodes where you want the data to appear.
+
+1. Upload the plugin folder to the `/wp-content/plugins/` directory.
+2. Activate the plugin through the Plugins screen in WordPress.
+3. Add a block, widget, or shortcode where you want exchange rates displayed.
 
 == Frequently Asked Questions ==
+
 = Do I need an API key? =
-No. All data sources are publicly available without authentication.
 
-= How often is the data refreshed? =
-Data is cached for 1 hour and refreshed via a scheduled cron job.
+No. Public data sources are used and no API key is required.
 
-= Does the plugin store any personal data? =
-No. It only fetches public financial data.
+= How often is data refreshed? =
 
-= Is the plugin compatible with Elementor? =
-Yes – three Elementor widgets are provided.
+Data is cached for one hour before being refreshed.
+
+= Does the plugin collect personal information? =
+
+No. The plugin only retrieves publicly available financial information.
+
+= Is Elementor supported? =
+
+Yes. Dedicated Elementor widgets are included.
 
 == Screenshots ==
-1. Settings page with Persian red accents and premium silver/white design.
-2. Gutenberg Exchange Rates block preview.
-3. Elementor widget settings panel.
-4. Mobile header ticker view.
-5. Appearance settings page with color picker.
+
+1. Exchange rates displayed on the frontend.
+2. Elementor widget settings and live preview.
 
 == Changelog ==
+
 = 1.0.0 =
-* Initial release – full feature set, SEO and accessibility compliance, KVKK privacy page, CI pipeline, unit tests.
+
+* Initial public release.
 
 == Upgrade Notice ==
+
 = 1.0.0 =
-First stable release.
+
+Initial stable release.

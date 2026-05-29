@@ -24,10 +24,12 @@ class ElementorRegistrar {
         require_once EL_DOVIZ_PATH . 'src/Elementor/ExchangeRatesWidget.php';
         require_once EL_DOVIZ_PATH . 'src/Elementor/TickerWidget.php';
         require_once EL_DOVIZ_PATH . 'src/Elementor/PrivacyWidget.php';
+        require_once EL_DOVIZ_PATH . 'src/Elementor/TrendWidget.php';
 
         $widgets_manager->register( new ExchangeRatesWidget() );
         $widgets_manager->register( new TickerWidget() );
         $widgets_manager->register( new PrivacyWidget() );
+        $widgets_manager->register( new TrendWidget() );
     }
 }
 ?>
