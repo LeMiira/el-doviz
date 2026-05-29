@@ -49,6 +49,15 @@ class Settings {
             'ledoviz-turkish-exchange-rates-settings',
             'ledoviz_turkish_exchange_rates_general_section'
         );
+
+        // Language toggle
+        add_settings_field(
+            'language',
+            esc_html__( 'Dil / Language', 'ledoviz-turkish-exchange-rates' ),
+            [ $this, 'field_language' ],
+            'ledoviz-turkish-exchange-rates-settings',
+            'ledoviz_turkish_exchange_rates_general_section'
+        );
     }
 
     /**
@@ -64,6 +73,9 @@ class Settings {
         }
         if ( isset( $input['debug_mode'] ) ) {
             $sanitized['debug_mode'] = Sanitizer::int( $input['debug_mode'] );
+        }
+        if ( isset( $input['language'] ) ) {
+            $sanitized['language'] = in_array( $input['language'], ['tr', 'en'], true ) ? $input['language'] : 'tr';
         }
         return $sanitized;
     }
@@ -84,6 +96,16 @@ class Settings {
         $value   = isset( $options['debug_mode'] ) ? (int) $options['debug_mode'] : 0;
         echo '<input type="checkbox" id="debug_mode" name="' . esc_attr( self::OPTION_NAME ) . '[debug_mode]" value="1" ' . checked( 1, $value, false ) . ' />';
         echo '<label for="debug_mode">' . esc_html__( 'Hata ayıklama günlüğünü etkinleştir (uploads/ledoviz-turkish-exchange-rates/logs/debug.log dosyasına yazar).', 'ledoviz-turkish-exchange-rates' ) . '</label>';
+    }
+
+    public function field_language() {
+        $options = get_option( self::OPTION_NAME );
+        $value   = isset( $options['language'] ) ? $options['language'] : 'tr';
+        echo '<select id="language" name="' . esc_attr( self::OPTION_NAME ) . '[language]">';
+        echo '<option value="tr" ' . selected( 'tr', $value, false ) . '>Türkçe</option>';
+        echo '<option value="en" ' . selected( 'en', $value, false ) . '>English</option>';
+        echo '</select>';
+        echo '<p class="description">' . esc_html__( 'Eklentinin önyüz ve panel dilini seçin. / Select the frontend and dashboard language of the plugin.', 'ledoviz-turkish-exchange-rates' ) . '</p>';
     }
 
     /**

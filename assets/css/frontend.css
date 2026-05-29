@@ -20,10 +20,12 @@
     --ledoviz-turkish-exchange-rates-text-light: #222222;
     --ledoviz-turkish-exchange-rates-text-dark: #f0f0f0;
 }
+
 [data-theme="dark"] {
     background-color: var(--ledoviz-turkish-exchange-rates-bg-dark);
     color: var(--ledoviz-turkish-exchange-rates-text-dark);
 }
+
 [data-theme="light"] {
     background-color: var(--ledoviz-turkish-exchange-rates-bg-light);
     color: var(--ledoviz-turkish-exchange-rates-text-light);
@@ -37,6 +39,7 @@
     list-style: none;
     flex-wrap: wrap;
 }
+
 .ledoviz-turkish-exchange-rates-header-ticker li,
 .ledoviz-turkish-exchange-rates-footer-ticker li {
     display: inline-block;
@@ -48,6 +51,7 @@
     padding: 0;
     margin: 0;
 }
+
 .ledoviz-turkish-exchange-rates-elementor-list li {
     margin-bottom: 0.5rem;
 }
@@ -58,8 +62,9 @@
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     gap: 0.75rem;
 }
+
 .ledoviz-turkish-exchange-rates-elementor-grid .grid-item {
-    background: rgba(0,0,0,0.05);
+    background: rgba(0, 0, 0, 0.05);
     padding: 0.5rem;
     text-align: center;
     border-radius: 4px;
@@ -70,19 +75,30 @@
     overflow: hidden;
     white-space: nowrap;
     font-weight: 600;
+    width: 100%;
+    container-type: inline-size;
 }
+
 .ledoviz-turkish-exchange-rates-ticker span {
     display: inline-block;
     padding-right: 2rem;
 }
+
 @media (prefers-reduced-motion: no-preference) {
     .ledoviz-turkish-exchange-rates-ticker span {
         animation: ledoviz-turkish-exchange-rates-scroll var(--ledoviz-turkish-exchange-rates-duration, 20s) linear infinite;
     }
 }
+
 @keyframes ledoviz-turkish-exchange-rates-scroll {
-    0% { transform: translateX(100%); }
-    100% { transform: translateX(-100%); }
+    0% {
+        transform: translateX(100vw);
+        transform: translateX(100cqw);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
 /* Responsive adjustments */
@@ -90,6 +106,7 @@
     .ledoviz-turkish-exchange-rates-elementor-grid {
         grid-template-columns: 1fr;
     }
+
     .ledoviz-turkish-exchange-rates-header-ticker,
     .ledoviz-turkish-exchange-rates-footer-ticker {
         flex-direction: column;
@@ -103,6 +120,7 @@
     background-color: var(--ledoviz-turkish-exchange-rates-bg, #f8f9fa);
     border: 1px solid rgba(0, 0, 0, 0.08);
 }
+
 .ledoviz-turkish-exchange-rates-item {
     display: flex;
     justify-content: space-between;
@@ -110,13 +128,16 @@
     padding: 8px 12px;
     border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
+
 .ledoviz-turkish-exchange-rates-item:last-child {
     border-bottom: none;
 }
+
 .ledoviz-turkish-exchange-rates-label {
     font-weight: 600;
     color: var(--ledoviz-turkish-exchange-rates-primary, #C41E3A);
 }
+
 .ledoviz-turkish-exchange-rates-val {
     font-family: monospace;
     font-weight: bold;
@@ -128,6 +149,7 @@
     grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
     gap: 0.75rem;
 }
+
 .ledoviz-turkish-exchange-rates-el-container.ledoviz-turkish-exchange-rates-elementor-grid .ledoviz-turkish-exchange-rates-item {
     display: flex;
     flex-direction: column;
@@ -139,10 +161,12 @@
     padding: 10px;
     gap: 4px;
 }
+
 .ledoviz-turkish-exchange-rates-el-container.ledoviz-turkish-exchange-rates-elementor-grid .ledoviz-turkish-exchange-rates-label {
     display: inline-block;
     margin-bottom: 0;
 }
+
 .ledoviz-turkish-exchange-rates-el-container.ledoviz-turkish-exchange-rates-elementor-grid .ledoviz-turkish-exchange-rates-val {
     display: inline-block;
 }
@@ -157,4 +181,3 @@
     line-height: 1.5;
     color: #555;
 }
-

@@ -8,6 +8,8 @@
 
 [Read in English](#english) | [Türkçe Oku](#türkçe)
 
+📦 **Download from WordPress.org:** [https://wordpress.org/plugins/ledoviz-turkish-exchange-rates/](https://wordpress.org/plugins/ledoviz-turkish-exchange-rates/)
+
 ---
 
 <a name="english"></a>
