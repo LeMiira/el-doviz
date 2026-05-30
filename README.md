@@ -55,10 +55,12 @@ Customize colors directly using CSS variables in your theme:
 #### 2. Gutenberg Blocks
 * **Exchange Rates** - Customizable grid/list list of currencies.
 * **Live Ticker** - Clean marquee banner ticker.
+* **Privacy & KVKK** - Golden lock-themed compliance disclaimer block.
+* **Exchange Rates & Trends** - Displays currencies with dynamic up/down arrows and percentage changes.
 
 #### 3. Elementor Widgets
 * **Exchange Rates** - Includes interactive sliders for Row Spacing, Alignment, and gaps.
-* **Exchange Rates & Trends** - Displays currencies with dynamic up/down arrows and percentage changes.
+* **Exchange Rates & Trends** - Displays currencies with dynamic up/down arrows and percentage changes. Includes a toggleable "Boxy Design".
 * **Live Ticker** - Fully customizable scrolling marquee.
 * **Privacy & KVKK** - Golden lock-themed compliance disclaimer block.
 
@@ -116,10 +118,12 @@ Temanızdaki CSS değişkenlerini kullanarak renkleri doğrudan özelleştirin:
 #### 2. Gutenberg Blokları
 * **Döviz Kurları** - Özelleştirilebilir döviz listesi veya ızgarası.
 * **Canlı Kur Bandı** - Temiz, kayan yazı şeklinde kur bandı.
+* **Gizlilik ve KVKK** - Altın renkli kilit simgeli KVKK beyan metni bloğu.
+* **Döviz Kurları ve Trendler** - Kurları dinamik oklar (yükseliş/düşüş) ve yüzde değişimleriyle birlikte gösterir.
 
 #### 3. Elementor Bileşenleri (Widgets)
 * **LeDoviz Kurları** - Satır boşluğu, hizalama ve simge-değer arası mesafe için gelişmiş kaydırıcı ayarları içerir.
-* **LeDoviz Kurları ve Trendler** - Kurları dinamik oklar (yükseliş/düşüş) ve yüzde değişimleriyle birlikte gösterir.
+* **LeDoviz Kurları ve Trendler** - Kurları dinamik oklar (yükseliş/düşüş) ve yüzde değişimleriyle birlikte gösterir. Kapatılıp açılabilen "Kutu Tasarımı (Boxy Design)" seçeneği barındırır.
 * **LeDoviz Canlı Kur Bandı** - Özelleştirilebilir kayan yazı bandı.
 * **Gizlilik ve KVKK** - Altın renkli kilit simgeli KVKK beyan metni bloğu.
 
@@ -154,3 +158,16 @@ add_filter( 'ledoviz_turkish_exchange_rates_api_endpoints', function( $endpoints
 ## Screenshots
 
 ![Dashboard](assets/screenshot-1.png)
+
+## 🔄 Changelog / Değişiklik Günlüğü
+
+### 1.0.1
+* **EN**: Added "Privacy & KVKK" and "Exchange Rates & Trends" Gutenberg blocks.
+* **EN**: Added "Boxy Design" toggle to the Elementor Trend Widget.
+* **EN**: Fixed translation files not loading in the admin dashboard and ensured 100% localization via `.po/.mo` files.
+* **TR**: "Gizlilik ve KVKK" ile "Döviz Kurları ve Trendler" Gutenberg blokları eklendi.
+* **TR**: Elementor Trend bileşenine "Kutu Tasarımı (Boxy Design)" seçeneği eklendi.
+* **TR**: Yönetim panelindeki çeviri sorunları giderildi ve tüm metinler %100 çevrilebilir hale getirildi.
+
+### 1.0.0
+* Initial release / İlk sürüm.

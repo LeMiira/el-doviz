@@ -17,6 +17,10 @@ class BlockRegistrar {
         register_block_type( __DIR__ . '/exchange-rates' );
         // Ticker block.
         register_block_type( __DIR__ . '/ticker' );
+        // Trend block.
+        register_block_type( __DIR__ . '/trend' );
+        // Privacy block.
+        register_block_type( __DIR__ . '/privacy' );
     }
 }
 ?>

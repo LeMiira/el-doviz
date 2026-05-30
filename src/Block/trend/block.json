@@ -1,0 +1,30 @@
+{
+    "apiVersion": 3,
+    "name": "ledoviz-turkish-exchange-rates/trend",
+    "title": "Exchange Rates and Trends",
+    "category": "widgets",
+    "icon": "trending-up",
+    "description": "Displays selected Turkish exchange rates with trend arrows.",
+    "supports": {
+        "html": false
+    },
+    "attributes": {
+        "currencies": {
+            "type": "string",
+            "default": "usd,eur,gbp,bist"
+        },
+        "layout": {
+            "type": "string",
+            "default": "grid"
+        },
+        "show_trend": {
+            "type": "boolean",
+            "default": true
+        },
+        "boxy_design": {
+            "type": "boolean",
+            "default": true
+        }
+    },
+    "render": "file:./render.php"
+}

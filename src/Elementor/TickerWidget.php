@@ -14,7 +14,7 @@ class TickerWidget extends Widget_Base {
     }
 
     public function get_title() {
-        return esc_html__( 'El Döviz Canlı Kur Bandı', 'ledoviz-turkish-exchange-rates' );
+        return esc_html__( 'El Döviz Canlı Kur Bandı', 'el-doviz' );
     }
 
     public function get_icon() {
@@ -30,7 +30,7 @@ class TickerWidget extends Widget_Base {
         $this->start_controls_section(
             'content_section',
             [
-                'label' => esc_html__( 'İçerik', 'ledoviz-turkish-exchange-rates' ),
+                'label' => esc_html__( 'İçerik', 'el-doviz' ),
                 'tab'   => Controls_Manager::TAB_CONTENT,
             ]
         );
@@ -38,25 +38,25 @@ class TickerWidget extends Widget_Base {
         $this->add_control(
             'currencies',
             [
-                'label'       => esc_html__( 'Para Birimi/Endeks Seçin', 'ledoviz-turkish-exchange-rates' ),
+                'label'       => esc_html__( 'Para Birimi/Endeks Seçin', 'el-doviz' ),
                 'type'        => Controls_Manager::SELECT2,
                 'multiple'    => true,
                 'default'     => [ 'usd', 'eur', 'gbp', 'bist' ],
                 'options'     => [
-                    'usd'  => esc_html__( 'USD (Amerikan Doları)', 'ledoviz-turkish-exchange-rates' ),
-                    'eur'  => esc_html__( 'EUR (Euro)', 'ledoviz-turkish-exchange-rates' ),
-                    'gbp'  => esc_html__( 'GBP (İngiliz Sterlini)', 'ledoviz-turkish-exchange-rates' ),
-                    'chf'  => esc_html__( 'CHF (İsviçre Frangı)', 'ledoviz-turkish-exchange-rates' ),
-                    'cad'  => esc_html__( 'CAD (Kanada Doları)', 'ledoviz-turkish-exchange-rates' ),
-                    'aud'  => esc_html__( 'AUD (Avustralya Doları)', 'ledoviz-turkish-exchange-rates' ),
-                    'dkk'  => esc_html__( 'DKK (Danimarka Kronu)', 'ledoviz-turkish-exchange-rates' ),
-                    'sek'  => esc_html__( 'SEK (İsveç Kronu)', 'ledoviz-turkish-exchange-rates' ),
-                    'nok'  => esc_html__( 'NOK (Norveç Kronu)', 'ledoviz-turkish-exchange-rates' ),
-                    'sar'  => esc_html__( 'SAR (Suudi Arabistan Riyali)', 'ledoviz-turkish-exchange-rates' ),
-                    'jpy'  => esc_html__( 'JPY (Japon Yeni)', 'ledoviz-turkish-exchange-rates' ),
-                    'rub'  => esc_html__( 'RUB (Rus Rublesi)', 'ledoviz-turkish-exchange-rates' ),
-                    'kwd'  => esc_html__( 'KWD (Kuveyt Dinarı)', 'ledoviz-turkish-exchange-rates' ),
-                    'bist' => esc_html__( 'BIST 100 Endeksi', 'ledoviz-turkish-exchange-rates' ),
+                    'usd'  => esc_html__( 'USD (Amerikan Doları)', 'el-doviz' ),
+                    'eur'  => esc_html__( 'EUR (Euro)', 'el-doviz' ),
+                    'gbp'  => esc_html__( 'GBP (İngiliz Sterlini)', 'el-doviz' ),
+                    'chf'  => esc_html__( 'CHF (İsviçre Frangı)', 'el-doviz' ),
+                    'cad'  => esc_html__( 'CAD (Kanada Doları)', 'el-doviz' ),
+                    'aud'  => esc_html__( 'AUD (Avustralya Doları)', 'el-doviz' ),
+                    'dkk'  => esc_html__( 'DKK (Danimarka Kronu)', 'el-doviz' ),
+                    'sek'  => esc_html__( 'SEK (İsveç Kronu)', 'el-doviz' ),
+                    'nok'  => esc_html__( 'NOK (Norveç Kronu)', 'el-doviz' ),
+                    'sar'  => esc_html__( 'SAR (Suudi Arabistan Riyali)', 'el-doviz' ),
+                    'jpy'  => esc_html__( 'JPY (Japon Yeni)', 'el-doviz' ),
+                    'rub'  => esc_html__( 'RUB (Rus Rublesi)', 'el-doviz' ),
+                    'kwd'  => esc_html__( 'KWD (Kuveyt Dinarı)', 'el-doviz' ),
+                    'bist' => esc_html__( 'BIST 100 Endeksi', 'el-doviz' ),
                 ],
                 'label_block' => true,
             ]
@@ -65,7 +65,7 @@ class TickerWidget extends Widget_Base {
         $this->add_control(
             'speed',
             [
-                'label'   => esc_html__( 'Bant Hızı (ms)', 'ledoviz-turkish-exchange-rates' ),
+                'label'   => esc_html__( 'Bant Hızı (ms)', 'el-doviz' ),
                 'type'    => Controls_Manager::NUMBER,
                 'default' => 5000,
                 'min'     => 1000,
@@ -79,7 +79,7 @@ class TickerWidget extends Widget_Base {
         $this->start_controls_section(
             'style_section',
             [
-                'label' => esc_html__( 'Stil Seçenekleri', 'ledoviz-turkish-exchange-rates' ),
+                'label' => esc_html__( 'Stil Seçenekleri', 'el-doviz' ),
                 'tab'   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -87,7 +87,7 @@ class TickerWidget extends Widget_Base {
         $this->add_control(
             'text_color',
             [
-                'label'     => esc_html__( 'Metin Rengi', 'ledoviz-turkish-exchange-rates' ),
+                'label'     => esc_html__( 'Metin Rengi', 'el-doviz' ),
                 'type'      => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .ledoviz-turkish-exchange-rates-ticker' => 'color: {{VALUE}};',
@@ -98,7 +98,7 @@ class TickerWidget extends Widget_Base {
         $this->add_control(
             'bg_color',
             [
-                'label'     => esc_html__( 'Arka Plan Rengi', 'ledoviz-turkish-exchange-rates' ),
+                'label'     => esc_html__( 'Arka Plan Rengi', 'el-doviz' ),
                 'type'      => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .ledoviz-turkish-exchange-rates-ticker' => 'background-color: {{VALUE}};',
@@ -135,7 +135,7 @@ class TickerWidget extends Widget_Base {
             if ( 'bist' === $code_lc ) {
                 if ( ! is_wp_error( $bist_data ) && isset( $bist_data['bist100'] ) ) {
                     $val = number_format_i18n( $bist_data['bist100'], 2 );
-                    $items[] = sprintf( '%s: %s', esc_html__( 'BIST 100', 'ledoviz-turkish-exchange-rates' ), esc_html( $val ) );
+                    $items[] = sprintf( '%s: %s', esc_html__( 'BIST 100', 'el-doviz' ), esc_html( $val ) );
                 }
             } else {
                 if ( ! is_wp_error( $rates ) && isset( $rates[ $code_lc ] ) ) {

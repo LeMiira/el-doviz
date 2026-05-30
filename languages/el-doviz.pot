@@ -1,0 +1,715 @@
+# Copyright (C) 2026 Mira
+# This file is distributed under the GPLv2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: LeDoviz - Turkish Exchange Rates 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/El Doviz\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-05-30T10:01:30+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: ledoviz-turkish-exchange-rates\n"
+
+#. Plugin Name of the plugin
+#: ledoviz-turkish-exchange-rates.php
+msgid "LeDoviz - Turkish Exchange Rates"
+msgstr ""
+
+#. Plugin URI of the plugin
+#: ledoviz-turkish-exchange-rates.php
+msgid "https://github.com/LeMiira/Le-Doviz"
+msgstr ""
+
+#. Description of the plugin
+#: ledoviz-turkish-exchange-rates.php
+msgid "Lightweight Turkish exchange rates, plugin for WordPress with Elementor, Gutenberg, shortcode, and widget support."
+msgstr ""
+
+#. Author of the plugin
+#: ledoviz-turkish-exchange-rates.php
+msgid "Mira"
+msgstr ""
+
+#. Author URI of the plugin
+#: ledoviz-turkish-exchange-rates.php
+msgid "https://miiiira.com"
+msgstr ""
+
+#: ledoviz-turkish-exchange-rates.php:48
+msgid "Donate"
+msgstr ""
+
+#: src/Admin/Page/LogsPage.php:14
+msgid "Eklenti Günlükleri"
+msgstr ""
+
+#: src/Admin/Page/LogsPage.php:15
+msgid "Hata ayıklama günlüğü dosyası içeriklerini görüntüleyin. Ayarlar altında Hata Ayıklama Modu etkin olmalıdır."
+msgstr ""
+
+#: src/Admin/Page/LogsPage.php:21
+msgid "Hata Ayıklama Günlüğü Görüntüleyici"
+msgstr ""
+
+#: src/Admin/Page/LogsPage.php:29
+msgid "Kayıtlı günlük bulunmamaktadır veya Hata Ayıklama Modu devre dışıdır."
+msgstr ""
+
+#: src/Admin/Settings.php:23
+msgid "El Döviz eklenti seçenekleri"
+msgstr ""
+
+#: src/Admin/Settings.php:30
+#: src/Admin/Settings.php:167
+msgid "Genel Ayarlar"
+msgstr ""
+
+#: src/Admin/Settings.php:32
+msgid "El Döviz eklentisinin genel davranışını yapılandırın."
+msgstr ""
+
+#: src/Admin/Settings.php:38
+msgid "Üst Bilgi Bandını Etkinleştir"
+msgstr ""
+
+#: src/Admin/Settings.php:47
+msgid "Hata Ayıklama Modu"
+msgstr ""
+
+#: src/Admin/Settings.php:56
+msgid "Dil / Language"
+msgstr ""
+
+#: src/Admin/Settings.php:90
+msgid "Site üst bilgisinde döviz kuru bandını göster."
+msgstr ""
+
+#: src/Admin/Settings.php:98
+msgid "Hata ayıklama günlüğünü etkinleştir (uploads/ledoviz-turkish-exchange-rates/logs/debug.log dosyasına yazar)."
+msgstr ""
+
+#: src/Admin/Settings.php:108
+msgid "Eklentinin önyüz ve panel dilini seçin. / Select the frontend and dashboard language of the plugin."
+msgstr ""
+
+#: src/Admin/Settings.php:116
+#: src/Admin/Settings.php:117
+msgid "El Döviz"
+msgstr ""
+
+#: src/Admin/Settings.php:124
+#: test_domain.php:7
+msgid "Panel"
+msgstr ""
+
+#: src/Admin/Settings.php:125
+msgid "Günlükler"
+msgstr ""
+
+#: src/Admin/Settings.php:130
+msgid "Yetersiz yetki."
+msgstr ""
+
+#: src/Admin/Settings.php:137
+msgid "Önbellek başarıyla temizlendi."
+msgstr ""
+
+#: src/Admin/Settings.php:148
+msgid "El Döviz Kontrol Paneli"
+msgstr ""
+
+#: src/Admin/Settings.php:159
+msgid "KVKK ve Veri Güvenliği Bildirimi:"
+msgstr ""
+
+#: src/Admin/Settings.php:160
+msgid "Bu eklenti, Türkiye Cumhuriyeti Merkez Bankası (TCMB) verilerini kullanarak döviz kurlarını gösterir. Eklenti aracılığıyla ziyaretçilerinize ait hiçbir kişisel veri toplanmaz, işlenmez veya üçüncü şahıslarla paylaşılmaz. KVKK uyumluluğu için sayfalarınıza \"El Döviz Gizlilik ve KVKK\" bileşenini veya [ledoviz_turkish_exchange_rates_privacy] kısa kodunu ekleyebilirsiniz."
+msgstr ""
+
+#: src/Admin/Settings.php:166
+msgid "Kullanım Rehberi"
+msgstr ""
+
+#: src/Admin/Settings.php:168
+msgid "Araçlar"
+msgstr ""
+
+#: src/Admin/Settings.php:176
+msgid "El Döviz eklentisinin tüm özelliklerini, kısa kodlarını ve entegrasyonlarını bu sayfada bulabilirsiniz."
+msgstr ""
+
+#: src/Admin/Settings.php:182
+msgid "Kısa Kodlar (Shortcodes)"
+msgstr ""
+
+#: src/Admin/Settings.php:183
+msgid "Eklentinin sunduğu özellikleri herhangi bir yazı veya sayfaya eklemek için aşağıdaki kısa kodları kullanabilirsiniz."
+msgstr ""
+
+#: src/Admin/Settings.php:187
+msgid "Döviz Kurları Listesi"
+msgstr ""
+
+#: src/Admin/Settings.php:189
+msgid "Belirtilen para birimlerini ve endeksleri liste veya ızgara biçiminde gösterir."
+msgstr ""
+
+#: src/Admin/Settings.php:190
+#: src/Admin/Settings.php:199
+msgid "Parametreler:"
+msgstr ""
+
+#: src/Admin/Settings.php:191
+msgid "Gösterilecek para birimleri (örn: usd,eur,gbp,bist)"
+msgstr ""
+
+#: src/Admin/Settings.php:192
+msgid "Görünüm biçimi (list veya grid)"
+msgstr ""
+
+#: src/Admin/Settings.php:196
+msgid "Canlı Kur Bandı"
+msgstr ""
+
+#: src/Admin/Settings.php:198
+msgid "Sitenin üst veya alt kısmında kayan döviz kurları bandı görüntüler."
+msgstr ""
+
+#: src/Admin/Settings.php:200
+msgid "Kayan bantta yer alacak birimler (örn: usd,eur,bist)"
+msgstr ""
+
+#: src/Admin/Settings.php:201
+msgid "Milisaniye cinsinden döngü hızı (örn: 5000)"
+msgstr ""
+
+#: src/Admin/Settings.php:205
+msgid "Gizlilik ve KVKK Açıklaması"
+msgstr ""
+
+#: src/Admin/Settings.php:207
+msgid "Kullanıcılara eklenti aracılığıyla hiçbir kişisel verinin işlenmediğini belirten KVKK uyarı metnini gösterir."
+msgstr ""
+
+#: src/Admin/Settings.php:215
+msgid "Elementor Entegrasyonu"
+msgstr ""
+
+#: src/Admin/Settings.php:216
+msgid "Elementor Düzenleyicide \"El Döviz\" kategorisi altındaki bileşenleri sürükleyip bırakarak sayfalarınıza ekleyebilirsiniz."
+msgstr ""
+
+#: src/Admin/Settings.php:221
+#: src/Elementor/ExchangeRatesWidget.php:23
+msgid "El Döviz Kurları ve Endeksler"
+msgstr ""
+
+#: src/Admin/Settings.php:222
+msgid "Gelişmiş liste veya ızgara düzeni seçimi. Stil sekmesinden etiket ve değerlerin tipografi, renk, kenarlık ve kutu gölgesi ayarlarını dinamik olarak değiştirebilirsiniz."
+msgstr ""
+
+#: src/Admin/Settings.php:227
+#: src/Elementor/TickerWidget.php:17
+msgid "El Döviz Canlı Kur Bandı"
+msgstr ""
+
+#: src/Admin/Settings.php:228
+msgid "Canlı kurları kayan yazı bandı şeklinde eklemenizi sağlar. Kayan yazı hızı ve yazı tipi renkleri düzenlenebilir."
+msgstr ""
+
+#: src/Admin/Settings.php:233
+#: src/Elementor/PrivacyWidget.php:23
+msgid "El Döviz Gizlilik ve KVKK"
+msgstr ""
+
+#: src/Admin/Settings.php:234
+msgid "Gizlilik ve veri sorumluluğu beyan metnini sayfalarınıza ekler. Yazı rengi, arka planı ve kutu tasarımı özelleştirilebilir."
+msgstr ""
+
+#: src/Admin/Settings.php:239
+#: src/Elementor/TrendWidget.php:23
+msgid "El Döviz Kurları ve Trendler"
+msgstr ""
+
+#: src/Admin/Settings.php:240
+msgid "Para birimlerini dinamik yükseliş/düşüş okları (trend göstergeleri) ve yüzde değişimleriyle birlikte gösterir. Renkleri ve tasarımı tamamen özelleştirilebilir."
+msgstr ""
+
+#: src/Admin/Settings.php:248
+msgid "Gutenberg ve Yan Menü Bileşenleri"
+msgstr ""
+
+#: src/Admin/Settings.php:252
+msgid "Gutenberg Blokları"
+msgstr ""
+
+#: src/Admin/Settings.php:253
+msgid "WordPress blok düzenleyicisinde \"Döviz Kurları\" veya \"Canlı Kur Bandı\" bloklarını aratarak yazılarınıza kolayca yerleştirebilirsiniz."
+msgstr ""
+
+#: src/Admin/Settings.php:257
+msgid "Yan Menü Bileşenleri (Widgets)"
+msgstr ""
+
+#: src/Admin/Settings.php:258
+msgid "Görünüm > Bileşenler sayfasına giderek \"El Döviz Yan Menü Bileşeni\"ni sitenizin aktif yan menü alanlarına (sidebar) ekleyebilirsiniz."
+msgstr ""
+
+#: src/Admin/Settings.php:266
+msgid "Geliştirici Filtreleri (Filters)"
+msgstr ""
+
+#: src/Admin/Settings.php:267
+msgid "Yazılımcılar ve temalar için sunulan kanca (filter) kütüphanesi:"
+msgstr ""
+
+#: src/Admin/Settings.php:269
+msgid "TCMB ve BIST 100 API veri kaynağı adreslerini değiştirmek için kullanılır."
+msgstr ""
+
+#: src/Admin/Settings.php:284
+msgid "Teşhis ve Testler"
+msgstr ""
+
+#: src/Admin/Settings.php:287
+msgid "TCMB API uç noktalarından anında yeni kurların alınması için önbelleğin süresini dolmaya zorlayın."
+msgstr ""
+
+#: src/Admin/Settings.php:288
+msgid "Önbelleği Temizle"
+msgstr ""
+
+#: src/Admin/Settings.php:301
+msgid "Eklentiyi Destekleyin"
+msgstr ""
+
+#: src/Admin/Settings.php:302
+msgid "El Döviz eklentisini beğendiyseniz, geliştirilmesine katkıda bulunmak ve yeni özelliklerin eklenmesini desteklemek için bağış yapabilirsiniz."
+msgstr ""
+
+#: src/Admin/Settings.php:308
+msgid "GitHub Sponsors"
+msgstr ""
+
+#: src/Admin/Settings.php:314
+msgid "Buy Me a Coffee"
+msgstr ""
+
+#: src/Admin/Settings.php:322
+msgid "Eklenti Bilgileri"
+msgstr ""
+
+#: src/Admin/Settings.php:324
+msgid "Sürüm:"
+msgstr ""
+
+#: src/Admin/Settings.php:325
+msgid "Geliştirici:"
+msgstr ""
+
+#: src/Admin/Settings.php:326
+msgid "Lisans:"
+msgstr ""
+
+#: src/Admin/Settings.php:327
+msgid "Veri Kaynağı:"
+msgstr ""
+
+#: src/Admin/Settings.php:327
+msgid "TCMB (T.C. Merkez Bankası)"
+msgstr ""
+
+#: src/Block/exchange-rates/render.php:19
+msgid "Döviz kurları yüklenemedi."
+msgstr ""
+
+#: src/Block/privacy/render.php:12
+#: src/Elementor/PrivacyWidget.php:44
+#: src/Shortcode/ShortcodeGenerator.php:69
+msgid "Bu sitede gösterilen tüm döviz kurları ve finansal veriler, Türkiye Cumhuriyet Merkez Bankası (TCMB) tarafından sağlanan halka açık verilerden alınmakta olup yalnızca bilgilendirme amaçlıdır. Verilerin kesin doğruluğu veya anlık güncelliği garanti edilmez. Kişisel verileriniz KVKK kapsamında korunmakta olup, bu eklenti aracılığıyla hiçbir kişisel ziyaretçi verisi toplanmamakta veya işlenmemektedir."
+msgstr ""
+
+#: src/Block/ticker/render.php:19
+msgid "Kurlar yüklenemedi."
+msgstr ""
+
+#: src/Block/trend/render.php:62
+#: src/Elementor/ExchangeRatesWidget.php:313
+#: src/Elementor/TickerWidget.php:138
+#: src/Elementor/TrendWidget.php:319
+msgid "BIST 100"
+msgstr ""
+
+#: src/Elementor/ExchangeRatesWidget.php:39
+#: src/Elementor/PrivacyWidget.php:39
+#: src/Elementor/TickerWidget.php:33
+#: src/Elementor/TrendWidget.php:39
+msgid "İçerik"
+msgstr ""
+
+#: src/Elementor/ExchangeRatesWidget.php:47
+#: src/Elementor/TickerWidget.php:41
+#: src/Elementor/TrendWidget.php:47
+msgid "Para Birimi/Endeks Seçin"
+msgstr ""
+
+#: src/Elementor/ExchangeRatesWidget.php:52
+#: src/Elementor/TickerWidget.php:46
+#: src/Elementor/TrendWidget.php:52
+msgid "USD (Amerikan Doları)"
+msgstr ""
+
+#: src/Elementor/ExchangeRatesWidget.php:53
+#: src/Elementor/TickerWidget.php:47
+#: src/Elementor/TrendWidget.php:53
+msgid "EUR (Euro)"
+msgstr ""
+
+#: src/Elementor/ExchangeRatesWidget.php:54
+#: src/Elementor/TickerWidget.php:48
+#: src/Elementor/TrendWidget.php:54
+msgid "GBP (İngiliz Sterlini)"
+msgstr ""
+
+#: src/Elementor/ExchangeRatesWidget.php:55
+#: src/Elementor/TickerWidget.php:49
+#: src/Elementor/TrendWidget.php:55
+msgid "CHF (İsviçre Frangı)"
+msgstr ""
+
+#: src/Elementor/ExchangeRatesWidget.php:56
+#: src/Elementor/TickerWidget.php:50
+#: src/Elementor/TrendWidget.php:56
+msgid "CAD (Kanada Doları)"
+msgstr ""
+
+#: src/Elementor/ExchangeRatesWidget.php:57
+#: src/Elementor/TickerWidget.php:51
+#: src/Elementor/TrendWidget.php:57
+msgid "AUD (Avustralya Doları)"
+msgstr ""
+
+#: src/Elementor/ExchangeRatesWidget.php:58
+#: src/Elementor/TickerWidget.php:52
+#: src/Elementor/TrendWidget.php:58
+msgid "DKK (Danimarka Kronu)"
+msgstr ""
+
+#: src/Elementor/ExchangeRatesWidget.php:59
+#: src/Elementor/TickerWidget.php:53
+#: src/Elementor/TrendWidget.php:59
+msgid "SEK (İsveç Kronu)"
+msgstr ""
+
+#: src/Elementor/ExchangeRatesWidget.php:60
+#: src/Elementor/TickerWidget.php:54
+#: src/Elementor/TrendWidget.php:60
+msgid "NOK (Norveç Kronu)"
+msgstr ""
+
+#: src/Elementor/ExchangeRatesWidget.php:61
+#: src/Elementor/TickerWidget.php:55
+#: src/Elementor/TrendWidget.php:61
+msgid "SAR (Suudi Arabistan Riyali)"
+msgstr ""
+
+#: src/Elementor/ExchangeRatesWidget.php:62
+#: src/Elementor/TickerWidget.php:56
+#: src/Elementor/TrendWidget.php:62
+msgid "JPY (Japon Yeni)"
+msgstr ""
+
+#: src/Elementor/ExchangeRatesWidget.php:63
+#: src/Elementor/TickerWidget.php:57
+#: src/Elementor/TrendWidget.php:63
+msgid "RUB (Rus Rublesi)"
+msgstr ""
+
+#: src/Elementor/ExchangeRatesWidget.php:64
+#: src/Elementor/TickerWidget.php:58
+#: src/Elementor/TrendWidget.php:64
+msgid "KWD (Kuveyt Dinarı)"
+msgstr ""
+
+#: src/Elementor/ExchangeRatesWidget.php:65
+#: src/Elementor/TickerWidget.php:59
+#: src/Elementor/TrendWidget.php:65
+msgid "BIST 100 Endeksi"
+msgstr ""
+
+#: src/Elementor/ExchangeRatesWidget.php:74
+#: src/Elementor/TrendWidget.php:74
+msgid "Görünüm"
+msgstr ""
+
+#: src/Elementor/ExchangeRatesWidget.php:78
+#: src/Elementor/TrendWidget.php:78
+msgid "Liste"
+msgstr ""
+
+#: src/Elementor/ExchangeRatesWidget.php:79
+#: src/Elementor/TrendWidget.php:79
+msgid "Izgara"
+msgstr ""
+
+#: src/Elementor/ExchangeRatesWidget.php:90
+#: src/Elementor/PrivacyWidget.php:88
+#: src/Elementor/TickerWidget.php:82
+#: src/Elementor/TrendWidget.php:114
+msgid "Stil Seçenekleri"
+msgstr ""
+
+#: src/Elementor/ExchangeRatesWidget.php:98
+#: src/Elementor/TrendWidget.php:122
+msgid "Varsayılan Metin Rengi"
+msgstr ""
+
+#: src/Elementor/ExchangeRatesWidget.php:109
+#: src/Elementor/TrendWidget.php:133
+msgid "Etiket Rengi"
+msgstr ""
+
+#: src/Elementor/ExchangeRatesWidget.php:122
+#: src/Elementor/TrendWidget.php:146
+msgid "Etiket Tipografisi"
+msgstr ""
+
+#: src/Elementor/ExchangeRatesWidget.php:130
+#: src/Elementor/TrendWidget.php:154
+msgid "Değer Rengi"
+msgstr ""
+
+#: src/Elementor/ExchangeRatesWidget.php:142
+#: src/Elementor/TrendWidget.php:166
+msgid "Değer Tipografisi"
+msgstr ""
+
+#: src/Elementor/ExchangeRatesWidget.php:150
+#: src/Elementor/PrivacyWidget.php:107
+#: src/Elementor/TickerWidget.php:101
+#: src/Elementor/TrendWidget.php:198
+msgid "Arka Plan Rengi"
+msgstr ""
+
+#: src/Elementor/ExchangeRatesWidget.php:162
+msgid "Kapsayıcı Tipografisi"
+msgstr ""
+
+#: src/Elementor/ExchangeRatesWidget.php:170
+#: src/Elementor/PrivacyWidget.php:126
+#: src/Elementor/TrendWidget.php:209
+msgid "İç Boşluk (Padding)"
+msgstr ""
+
+#: src/Elementor/ExchangeRatesWidget.php:190
+#: src/Elementor/PrivacyWidget.php:146
+#: src/Elementor/TrendWidget.php:229
+msgid "Kenar Yumuşatma (Border Radius)"
+msgstr ""
+
+#: src/Elementor/ExchangeRatesWidget.php:210
+msgid "Yerleşim ve Boşluklar"
+msgstr ""
+
+#: src/Elementor/ExchangeRatesWidget.php:219
+msgid "Satır Boşluğu (Space between items)"
+msgstr ""
+
+#: src/Elementor/ExchangeRatesWidget.php:243
+msgid "Birim Hizalaması (Alignment)"
+msgstr ""
+
+#: src/Elementor/ExchangeRatesWidget.php:247
+msgid "Ayrık (Left / Right)"
+msgstr ""
+
+#: src/Elementor/ExchangeRatesWidget.php:251
+msgid "Bitişik (Compact)"
+msgstr ""
+
+#: src/Elementor/ExchangeRatesWidget.php:255
+msgid "Merkez"
+msgstr ""
+
+#: src/Elementor/ExchangeRatesWidget.php:269
+msgid "Sembol ve Değer Boşluğu (Gap)"
+msgstr ""
+
+#: src/Elementor/PrivacyWidget.php:49
+msgid "Açıklama Metni"
+msgstr ""
+
+#: src/Elementor/PrivacyWidget.php:59
+msgid "Hizalama"
+msgstr ""
+
+#: src/Elementor/PrivacyWidget.php:63
+msgid "Sol"
+msgstr ""
+
+#: src/Elementor/PrivacyWidget.php:67
+msgid "Orta"
+msgstr ""
+
+#: src/Elementor/PrivacyWidget.php:71
+msgid "Sağ"
+msgstr ""
+
+#: src/Elementor/PrivacyWidget.php:96
+#: src/Elementor/TickerWidget.php:90
+msgid "Metin Rengi"
+msgstr ""
+
+#: src/Elementor/TickerWidget.php:68
+msgid "Bant Hızı (ms)"
+msgstr ""
+
+#: src/Elementor/TrendWidget.php:87
+msgid "Trend Oklarını Göster"
+msgstr ""
+
+#: src/Elementor/TrendWidget.php:89
+msgid "Göster"
+msgstr ""
+
+#: src/Elementor/TrendWidget.php:90
+msgid "Gizle"
+msgstr ""
+
+#: src/Elementor/TrendWidget.php:99
+msgid "Kutu Tasarımı (Boxy Design)"
+msgstr ""
+
+#: src/Elementor/TrendWidget.php:101
+msgid "Aktif"
+msgstr ""
+
+#: src/Elementor/TrendWidget.php:102
+msgid "Pasif"
+msgstr ""
+
+#: src/Elementor/TrendWidget.php:174
+msgid "Yükseliş Rengi (Trend Up)"
+msgstr ""
+
+#: src/Elementor/TrendWidget.php:186
+msgid "Düşüş Rengi (Trend Down)"
+msgstr ""
+
+#: src/Elementor/TrendWidget.php:249
+msgid "Boşluk (Gap)"
+msgstr ""
+
+#: src/REST/RatesController.php:36
+msgid "Data source (tcmb)."
+msgstr ""
+
+#: src/Service/DataFetcher.php:47
+msgid "Invalid data source."
+msgstr ""
+
+#: src/Service/DataFetcher.php:68
+msgid "Unexpected HTTP response."
+msgstr ""
+
+#: src/Service/DataFetcher.php:100
+msgid "Failed to parse TCMB XML."
+msgstr ""
+
+#: src/Service/DataFetcher.php:113
+msgid "Invalid BIST JSON."
+msgstr ""
+
+#: src/Service/DataFetcher.php:132
+msgid "Unknown source for parsing."
+msgstr ""
+
+#: src/Widget/FooterTickerWidget.php:15
+msgid "El Doviz Footer Ticker"
+msgstr ""
+
+#: src/Widget/FooterTickerWidget.php:16
+msgid "Shows a scrolling ticker of exchange rates in the footer."
+msgstr ""
+
+#: src/Widget/FooterTickerWidget.php:25
+#: src/Widget/HeaderTickerWidget.php:29
+msgid "Rates unavailable."
+msgstr ""
+
+#: src/Widget/FooterTickerWidget.php:51
+#: src/Widget/HeaderTickerWidget.php:58
+msgid "Currencies (comma separated)"
+msgstr ""
+
+#: src/Widget/HeaderTickerWidget.php:15
+msgid "El Doviz Header Ticker"
+msgstr ""
+
+#: src/Widget/HeaderTickerWidget.php:16
+msgid "Shows a scrolling ticker of exchange rates in the header."
+msgstr ""
+
+#: src/Widget/SidebarWidget.php:15
+msgid "El Döviz Yan Menü Bileşeni"
+msgstr ""
+
+#: src/Widget/SidebarWidget.php:16
+msgid "Döviz kurlarını yan menüde gösterir."
+msgstr ""
+
+#: src/Widget/SidebarWidget.php:41
+msgid "Döviz Kurları"
+msgstr ""
+
+#: src/Widget/SidebarWidget.php:45
+msgid "Başlık:"
+msgstr ""
+
+#: src/Widget/SidebarWidget.php:49
+msgid "Para Birimleri (virgülle ayrılmış):"
+msgstr ""
+
+#: src/Block/exchange-rates/block.json
+msgctxt "block title"
+msgid "Exchange Rates"
+msgstr ""
+
+#: src/Block/exchange-rates/block.json
+msgctxt "block description"
+msgid "Displays selected Turkish exchange rates."
+msgstr ""
+
+#: src/Block/privacy/block.json
+msgctxt "block title"
+msgid "Privacy & GDPR"
+msgstr ""
+
+#: src/Block/privacy/block.json
+msgctxt "block description"
+msgid "Adds privacy and data responsibility declaration text."
+msgstr ""
+
+#: src/Block/ticker/block.json
+msgctxt "block title"
+msgid "Live Ticker"
+msgstr ""
+
+#: src/Block/ticker/block.json
+msgctxt "block description"
+msgid "Displays a scrolling live ticker of selected rates."
+msgstr ""
+
+#: src/Block/trend/block.json
+msgctxt "block title"
+msgid "Exchange Rates and Trends"
+msgstr ""
+
+#: src/Block/trend/block.json
+msgctxt "block description"
+msgid "Displays selected Turkish exchange rates with trend arrows."
+msgstr ""

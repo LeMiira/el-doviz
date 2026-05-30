@@ -33,7 +33,7 @@ class RatesController extends WP_REST_Controller {
                 'permission_callback' => [ $this, 'public_permission' ],
                 'args'                => [
                     'source' => [
-                        'description' => esc_html__( 'Data source (tcmb).', 'ledoviz-turkish-exchange-rates' ),
+                        'description' => esc_html__( 'Data source (tcmb).', 'el-doviz' ),
                         'type'        => 'string',
                         'enum'        => [ 'tcmb' ],
                         'default'     => 'tcmb',

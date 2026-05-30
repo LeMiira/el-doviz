@@ -1,0 +1,22 @@
+{
+    "apiVersion": 3,
+    "name": "ledoviz-turkish-exchange-rates/privacy",
+    "title": "Privacy & GDPR",
+    "category": "widgets",
+    "icon": "lock",
+    "description": "Adds privacy and data responsibility declaration text.",
+    "supports": {
+        "html": false
+    },
+    "attributes": {
+        "privacy_text": {
+            "type": "string",
+            "default": ""
+        },
+        "align": {
+            "type": "string",
+            "default": "left"
+        }
+    },
+    "render": "file:./render.php"
+}

@@ -16,7 +16,7 @@ function ledoviz_turkish_exchange_rates_render_exchange_rates( $attributes ) {
     $fetcher = new \ElDoviz\Service\DataFetcher( new \ElDoviz\Service\CacheManager() );
     $rates   = $fetcher->fetch( 'tcmb', HOUR_IN_SECONDS );
     if ( is_wp_error( $rates ) ) {
-        return '<p>' . esc_html__( 'Döviz kurları yüklenemedi.', 'ledoviz-turkish-exchange-rates' ) . '</p>';
+        return '<p>' . esc_html__( 'Döviz kurları yüklenemedi.', 'el-doviz' ) . '</p>';
     }
 
     $currencies = array_map( 'trim', explode( ',', $attributes['currencies'] ) );

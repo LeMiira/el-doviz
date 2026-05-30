@@ -45,6 +45,7 @@ class Main {
         add_action( 'wp_enqueue_scripts', [ $this, 'enqueue_assets' ] );
         add_action( 'admin_enqueue_scripts', [ $this, 'enqueue_admin_assets' ] );
         // Register core components and hooks.
+        add_action( 'init', [ $this, 'load_textdomain' ] );
         add_action( 'init', [ $this, 'register_components' ] );
         add_action( 'admin_init', [ $this->settings, 'register_settings' ] );
         add_action( 'admin_menu', [ Settings::class, 'add_admin_menu' ] );
@@ -142,18 +143,34 @@ class Main {
     }
 
     /**
+     * Load plugin textdomain.
+     */
+    public function load_textdomain() {
+        // Unload any automatically loaded text domains (JIT loading) which might have used the site default locale.
+        unload_textdomain( 'el-doviz' );
+
+        $locale = $this->locale_override( determine_locale(), 'el-doviz' );
+        $mofile = EL_DOVIZ_PATH . 'languages/el-doviz-' . $locale . '.mo';
+        
+        load_textdomain( 'el-doviz', $mofile );
+    }
+
+    /**
      * Override plugin locale to English if language is set to 'en'.
      */
     public function locale_override( $locale, $domain ) {
-        if ( 'ledoviz-turkish-exchange-rates' !== $domain ) {
+        if ( 'el-doviz' !== $domain ) {
             return $locale;
         }
 
         $options = get_option( 'ledoviz_turkish_exchange_rates_options' );
+        // If not set, default to site language or tr.
         $lang = isset( $options['language'] ) ? $options['language'] : 'tr';
 
         if ( 'en' === $lang ) {
             return 'en_US';
+        } elseif ( 'tr' === $lang ) {
+            return 'tr_TR';
         }
 
         return $locale;

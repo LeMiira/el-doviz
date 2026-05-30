@@ -5,7 +5,7 @@ Tags: currency converter, exchange rates, turkey, elementor, gutenberg
 Requires at least: 6.0
 Tested up to: 7.0
 Requires PHP: 7.4
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: https://www.gnu.org/licenses/gpl-2.0.html
 
@@ -15,17 +15,19 @@ Display live Turkish exchange rates using Gutenberg blocks, Elementor widgets, s
 
 LeDoviz is a lightweight WordPress plugin for displaying Turkish exchange rates on your website. It supports Gutenberg, Elementor, shortcodes, and traditional widgets while focusing on performance, accessibility, and ease of use.
 
-Features:
+LeDoviz, Türkiye Cumhuriyeti Merkez Bankası (TCMB) döviz kurlarını sitenizde şık ve yüksek performanslı bir şekilde göstermeniz için tasarlanmış birinci sınıf, hafif ve güvenli bir WordPress eklentisidir.
 
-* Display live exchange rates from trusted public sources.
-* Native Gutenberg block support.
-* Native Elementor widget support.
-* Shortcode support for easy placement anywhere.
-* Responsive mobile-friendly layouts.
-* Translation ready.
-* Accessibility-focused interface.
-* Lightweight and optimized for performance.
-* No API keys required.
+Features / Özellikler:
+
+* Display live exchange rates from trusted public sources / Güvenilir kaynaklardan canlı kurlar.
+* Native Gutenberg block support / Yerel Gutenberg blok desteği.
+* Native Elementor widget support / Yerel Elementor bileşeni desteği.
+* Shortcode support for easy placement anywhere / Kolay kullanım için kısa kod desteği.
+* Responsive mobile-friendly layouts / Mobil uyumlu tasarımlar.
+* Translation ready (English & Turkish) / Çeviriye hazır (İngilizce & Türkçe).
+* Accessibility-focused interface / Erişilebilirlik odaklı arayüz.
+* Lightweight and optimized for performance / Hafif ve performans odaklı.
+* No API keys required / API anahtarı gerektirmez.
 
 == External Services ==
 
@@ -80,17 +82,21 @@ Display privacy notice:
 
 [ledoviz_turkish_exchange_rates_privacy]
 
-== Blocks and Widgets ==
+== Blocks and Widgets / Bloklar ve Bileşenler ==
 
-Gutenberg Block:
+Gutenberg Blocks / Blokları:
 
-* Exchange Rates
-* Live Ticker
+* Exchange Rates / Döviz Kurları
+* Live Ticker / Canlı Kur Bandı
+* Privacy & KVKK / Gizlilik ve KVKK
+* Exchange Rates & Trends / Döviz Kurları ve Trendler
 
-Elementor Widgets:
+Elementor Widgets / Bileşenleri:
 
-* Exchange Rates
-* Live Ticker
+* Exchange Rates / Döviz Kurları
+* Live Ticker / Canlı Kur Bandı
+* Privacy & KVKK / Gizlilik ve KVKK
+* Exchange Rates & Trends / Döviz Kurları ve Trendler
 
 == Performance ==
 
@@ -135,11 +141,24 @@ Yes. Dedicated Elementor widgets are included.
 
 == Changelog ==
 
+= 1.0.1 =
+
+* Added "Privacy & KVKK" and "Exchange Rates & Trends" Gutenberg blocks.
+* Added "Boxy Design" toggle to the Elementor Trend Widget.
+* Fixed translation files not loading in the admin dashboard and ensured 100% localization via .po/.mo files.
+* "Gizlilik ve KVKK" ile "Döviz Kurları ve Trendler" Gutenberg blokları eklendi.
+* Elementor Trend bileşenine "Kutu Tasarımı (Boxy Design)" seçeneği eklendi.
+* Yönetim panelindeki çeviri sorunları giderildi ve tüm metinler %100 çevrilebilir hale getirildi.
+
 = 1.0.0 =
 
 * Initial public release.
 
 == Upgrade Notice ==
+
+= 1.0.1 =
+
+Contains important translation fixes and new Gutenberg blocks. / Önemli çeviri düzeltmeleri ve yeni Gutenberg blokları içerir.
 
 = 1.0.0 =
 

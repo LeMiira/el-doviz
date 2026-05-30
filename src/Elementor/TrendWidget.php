@@ -20,11 +20,11 @@ class TrendWidget extends Widget_Base {
     }
 
     public function get_title() {
-        return esc_html__( 'El Döviz Kurları ve Trendler', 'ledoviz-turkish-exchange-rates' );
+        return esc_html__( 'El Döviz Kurları ve Trendler', 'el-doviz' );
     }
 
     public function get_icon() {
-        return 'eicon-trending-up';
+        return 'eicon-arrow-up';
     }
 
     public function get_categories() {
@@ -36,7 +36,7 @@ class TrendWidget extends Widget_Base {
         $this->start_controls_section(
             'content_section',
             [
-                'label' => esc_html__( 'İçerik', 'ledoviz-turkish-exchange-rates' ),
+                'label' => esc_html__( 'İçerik', 'el-doviz' ),
                 'tab'   => Controls_Manager::TAB_CONTENT,
             ]
         );
@@ -44,25 +44,25 @@ class TrendWidget extends Widget_Base {
         $this->add_control(
             'currencies',
             [
-                'label'       => esc_html__( 'Para Birimi/Endeks Seçin', 'ledoviz-turkish-exchange-rates' ),
+                'label'       => esc_html__( 'Para Birimi/Endeks Seçin', 'el-doviz' ),
                 'type'        => Controls_Manager::SELECT2,
                 'multiple'    => true,
                 'default'     => [ 'usd', 'eur', 'gbp', 'bist' ],
                 'options'     => [
-                    'usd'  => esc_html__( 'USD (Amerikan Doları)', 'ledoviz-turkish-exchange-rates' ),
-                    'eur'  => esc_html__( 'EUR (Euro)', 'ledoviz-turkish-exchange-rates' ),
-                    'gbp'  => esc_html__( 'GBP (İngiliz Sterlini)', 'ledoviz-turkish-exchange-rates' ),
-                    'chf'  => esc_html__( 'CHF (İsviçre Frangı)', 'ledoviz-turkish-exchange-rates' ),
-                    'cad'  => esc_html__( 'CAD (Kanada Doları)', 'ledoviz-turkish-exchange-rates' ),
-                    'aud'  => esc_html__( 'AUD (Avustralya Doları)', 'ledoviz-turkish-exchange-rates' ),
-                    'dkk'  => esc_html__( 'DKK (Danimarka Kronu)', 'ledoviz-turkish-exchange-rates' ),
-                    'sek'  => esc_html__( 'SEK (İsveç Kronu)', 'ledoviz-turkish-exchange-rates' ),
-                    'nok'  => esc_html__( 'NOK (Norveç Kronu)', 'ledoviz-turkish-exchange-rates' ),
-                    'sar'  => esc_html__( 'SAR (Suudi Arabistan Riyali)', 'ledoviz-turkish-exchange-rates' ),
-                    'jpy'  => esc_html__( 'JPY (Japon Yeni)', 'ledoviz-turkish-exchange-rates' ),
-                    'rub'  => esc_html__( 'RUB (Rus Rublesi)', 'ledoviz-turkish-exchange-rates' ),
-                    'kwd'  => esc_html__( 'KWD (Kuveyt Dinarı)', 'ledoviz-turkish-exchange-rates' ),
-                    'bist' => esc_html__( 'BIST 100 Endeksi', 'ledoviz-turkish-exchange-rates' ),
+                    'usd'  => esc_html__( 'USD (Amerikan Doları)', 'el-doviz' ),
+                    'eur'  => esc_html__( 'EUR (Euro)', 'el-doviz' ),
+                    'gbp'  => esc_html__( 'GBP (İngiliz Sterlini)', 'el-doviz' ),
+                    'chf'  => esc_html__( 'CHF (İsviçre Frangı)', 'el-doviz' ),
+                    'cad'  => esc_html__( 'CAD (Kanada Doları)', 'el-doviz' ),
+                    'aud'  => esc_html__( 'AUD (Avustralya Doları)', 'el-doviz' ),
+                    'dkk'  => esc_html__( 'DKK (Danimarka Kronu)', 'el-doviz' ),
+                    'sek'  => esc_html__( 'SEK (İsveç Kronu)', 'el-doviz' ),
+                    'nok'  => esc_html__( 'NOK (Norveç Kronu)', 'el-doviz' ),
+                    'sar'  => esc_html__( 'SAR (Suudi Arabistan Riyali)', 'el-doviz' ),
+                    'jpy'  => esc_html__( 'JPY (Japon Yeni)', 'el-doviz' ),
+                    'rub'  => esc_html__( 'RUB (Rus Rublesi)', 'el-doviz' ),
+                    'kwd'  => esc_html__( 'KWD (Kuveyt Dinarı)', 'el-doviz' ),
+                    'bist' => esc_html__( 'BIST 100 Endeksi', 'el-doviz' ),
                 ],
                 'label_block' => true,
             ]
@@ -71,12 +71,12 @@ class TrendWidget extends Widget_Base {
         $this->add_control(
             'layout',
             [
-                'label'   => esc_html__( 'Görünüm', 'ledoviz-turkish-exchange-rates' ),
+                'label'   => esc_html__( 'Görünüm', 'el-doviz' ),
                 'type'    => Controls_Manager::SELECT,
                 'default' => 'grid',
                 'options' => [
-                    'list'   => esc_html__( 'Liste', 'ledoviz-turkish-exchange-rates' ),
-                    'grid'   => esc_html__( 'Izgara', 'ledoviz-turkish-exchange-rates' ),
+                    'list'   => esc_html__( 'Liste', 'el-doviz' ),
+                    'grid'   => esc_html__( 'Izgara', 'el-doviz' ),
                 ],
             ]
         );
@@ -84,10 +84,22 @@ class TrendWidget extends Widget_Base {
         $this->add_control(
             'show_trend',
             [
-                'label'        => esc_html__( 'Trend Oklarını Göster', 'ledoviz-turkish-exchange-rates' ),
+                'label'        => esc_html__( 'Trend Oklarını Göster', 'el-doviz' ),
                 'type'         => Controls_Manager::SWITCHER,
-                'label_on'     => esc_html__( 'Göster', 'ledoviz-turkish-exchange-rates' ),
-                'label_off'    => esc_html__( 'Gizle', 'ledoviz-turkish-exchange-rates' ),
+                'label_on'     => esc_html__( 'Göster', 'el-doviz' ),
+                'label_off'    => esc_html__( 'Gizle', 'el-doviz' ),
+                'return_value' => 'yes',
+                'default'      => 'yes',
+            ]
+        );
+
+        $this->add_control(
+            'boxy_design',
+            [
+                'label'        => esc_html__( 'Kutu Tasarımı (Boxy Design)', 'el-doviz' ),
+                'type'         => Controls_Manager::SWITCHER,
+                'label_on'     => esc_html__( 'Aktif', 'el-doviz' ),
+                'label_off'    => esc_html__( 'Pasif', 'el-doviz' ),
                 'return_value' => 'yes',
                 'default'      => 'yes',
             ]
@@ -99,7 +111,7 @@ class TrendWidget extends Widget_Base {
         $this->start_controls_section(
             'style_section',
             [
-                'label' => esc_html__( 'Stil Seçenekleri', 'ledoviz-turkish-exchange-rates' ),
+                'label' => esc_html__( 'Stil Seçenekleri', 'el-doviz' ),
                 'tab'   => Controls_Manager::TAB_STYLE,
             ]
         );
@@ -107,7 +119,7 @@ class TrendWidget extends Widget_Base {
         $this->add_control(
             'text_color',
             [
-                'label'     => esc_html__( 'Varsayılan Metin Rengi', 'ledoviz-turkish-exchange-rates' ),
+                'label'     => esc_html__( 'Varsayılan Metin Rengi', 'el-doviz' ),
                 'type'      => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .ledoviz-turkish-exchange-rates-el-container' => 'color: {{VALUE}};',
@@ -118,7 +130,7 @@ class TrendWidget extends Widget_Base {
         $this->add_control(
             'accent_color',
             [
-                'label'     => esc_html__( 'Etiket Rengi', 'ledoviz-turkish-exchange-rates' ),
+                'label'     => esc_html__( 'Etiket Rengi', 'el-doviz' ),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#C41E3A',
                 'selectors' => [
@@ -131,7 +143,7 @@ class TrendWidget extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name'     => 'label_typography',
-                'label'    => esc_html__( 'Etiket Tipografisi', 'ledoviz-turkish-exchange-rates' ),
+                'label'    => esc_html__( 'Etiket Tipografisi', 'el-doviz' ),
                 'selector' => '{{WRAPPER}} .ledoviz-turkish-exchange-rates-label',
             ]
         );
@@ -139,7 +151,7 @@ class TrendWidget extends Widget_Base {
         $this->add_control(
             'val_color',
             [
-                'label'     => esc_html__( 'Değer Rengi', 'ledoviz-turkish-exchange-rates' ),
+                'label'     => esc_html__( 'Değer Rengi', 'el-doviz' ),
                 'type'      => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .ledoviz-turkish-exchange-rates-val' => 'color: {{VALUE}};',
@@ -151,7 +163,7 @@ class TrendWidget extends Widget_Base {
             Group_Control_Typography::get_type(),
             [
                 'name'     => 'val_typography',
-                'label'    => esc_html__( 'Değer Tipografisi', 'ledoviz-turkish-exchange-rates' ),
+                'label'    => esc_html__( 'Değer Tipografisi', 'el-doviz' ),
                 'selector' => '{{WRAPPER}} .ledoviz-turkish-exchange-rates-val',
             ]
         );
@@ -159,7 +171,7 @@ class TrendWidget extends Widget_Base {
         $this->add_control(
             'trend_up_color',
             [
-                'label'     => esc_html__( 'Yükseliş Rengi (Trend Up)', 'ledoviz-turkish-exchange-rates' ),
+                'label'     => esc_html__( 'Yükseliş Rengi (Trend Up)', 'el-doviz' ),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#27ae60',
                 'selectors' => [
@@ -171,7 +183,7 @@ class TrendWidget extends Widget_Base {
         $this->add_control(
             'trend_down_color',
             [
-                'label'     => esc_html__( 'Düşüş Rengi (Trend Down)', 'ledoviz-turkish-exchange-rates' ),
+                'label'     => esc_html__( 'Düşüş Rengi (Trend Down)', 'el-doviz' ),
                 'type'      => Controls_Manager::COLOR,
                 'default'   => '#e74c3c',
                 'selectors' => [
@@ -183,7 +195,7 @@ class TrendWidget extends Widget_Base {
         $this->add_control(
             'bg_color',
             [
-                'label'     => esc_html__( 'Arka Plan Rengi', 'ledoviz-turkish-exchange-rates' ),
+                'label'     => esc_html__( 'Arka Plan Rengi', 'el-doviz' ),
                 'type'      => Controls_Manager::COLOR,
                 'selectors' => [
                     '{{WRAPPER}} .ledoviz-turkish-exchange-rates-el-container .ledoviz-turkish-exchange-rates-item' => 'background-color: {{VALUE}};',
@@ -194,7 +206,7 @@ class TrendWidget extends Widget_Base {
         $this->add_responsive_control(
             'padding',
             [
-                'label'      => esc_html__( 'İç Boşluk (Padding)', 'ledoviz-turkish-exchange-rates' ),
+                'label'      => esc_html__( 'İç Boşluk (Padding)', 'el-doviz' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%', 'em' ],
                 'selectors' => [
@@ -214,7 +226,7 @@ class TrendWidget extends Widget_Base {
         $this->add_control(
             'border_radius',
             [
-                'label'      => esc_html__( 'Kenar Yumuşatma (Border Radius)', 'ledoviz-turkish-exchange-rates' ),
+                'label'      => esc_html__( 'Kenar Yumuşatma (Border Radius)', 'el-doviz' ),
                 'type'       => Controls_Manager::DIMENSIONS,
                 'size_units' => [ 'px', '%' ],
                 'selectors' => [
@@ -234,7 +246,7 @@ class TrendWidget extends Widget_Base {
         $this->add_control(
             'row_spacing',
             [
-                'label'      => esc_html__( 'Boşluk (Gap)', 'ledoviz-turkish-exchange-rates' ),
+                'label'      => esc_html__( 'Boşluk (Gap)', 'el-doviz' ),
                 'type'       => Controls_Manager::SLIDER,
                 'size_units' => [ 'px', 'em', 'rem' ],
                 'range'      => [
@@ -278,7 +290,7 @@ class TrendWidget extends Widget_Base {
             
             // Generate a deterministic trend for the demo (or use previous data if available).
             // A hash based on the current hour and the currency code to make it look realistic but stable for an hour.
-            $trend_hash = crc32( $code_lc . date('H') );
+            $trend_hash = crc32( $code_lc . gmdate('H') );
             $is_up = $trend_hash % 2 === 0;
             $percent = ($trend_hash % 300) / 100; // 0.00 to 2.99
             
@@ -293,25 +305,32 @@ class TrendWidget extends Widget_Base {
                 }
             }
 
+            $is_boxy = ( isset($settings['boxy_design']) && 'yes' === $settings['boxy_design'] );
+            $item_style = $is_boxy 
+                ? 'display: flex; flex-direction: column; justify-content: center; align-items: center; background: rgba(0,0,0,0.03); border: 1px solid rgba(0,0,0,0.05); border-radius: 6px; padding: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.02);'
+                : 'display: flex; justify-content: space-between; align-items: center;';
+            $label_style = $is_boxy ? 'font-size: 1.1em; font-weight: bold; margin-bottom: 5px;' : '';
+            $val_container_style = 'display: flex; align-items: center;';
+
             if ( 'bist' === $code_lc ) {
                 if ( ! is_wp_error( $bist_data ) && isset( $bist_data['bist100'] ) ) {
                     $val = number_format_i18n( $bist_data['bist100'], 2 );
-                    echo '<div class="ledoviz-turkish-exchange-rates-item" style="display: flex; flex-direction: column; justify-content: center; align-items: center; background: rgba(0,0,0,0.03); border: 1px solid rgba(0,0,0,0.05); border-radius: 6px; padding: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.02);">';
-                    echo '<span class="ledoviz-turkish-exchange-rates-label" style="font-size: 1.1em; font-weight: bold; margin-bottom: 5px;">' . esc_html__( 'BIST 100', 'ledoviz-turkish-exchange-rates' ) . '</span>';
-                    echo '<div style="display: flex; align-items: center;">';
+                    echo '<div class="ledoviz-turkish-exchange-rates-item" style="' . esc_attr($item_style) . '">';
+                    echo '<span class="ledoviz-turkish-exchange-rates-label" style="' . esc_attr($label_style) . '">' . esc_html__( 'BIST 100', 'el-doviz' ) . '</span>';
+                    echo '<div style="' . esc_attr($val_container_style) . '">';
                     echo '<span class="ledoviz-turkish-exchange-rates-val" style="font-size: 1.3em;">' . esc_html( $val ) . '</span>';
-                    echo $trend_html;
+                    echo wp_kses_post( $trend_html );
                     echo '</div>';
                     echo '</div>';
                 }
             } else {
                 if ( ! is_wp_error( $rates ) && isset( $rates[ $code_lc ] ) ) {
                     $val = number_format_i18n( $rates[ $code_lc ], 4 );
-                    echo '<div class="ledoviz-turkish-exchange-rates-item" style="display: flex; flex-direction: column; justify-content: center; align-items: center; background: rgba(0,0,0,0.03); border: 1px solid rgba(0,0,0,0.05); border-radius: 6px; padding: 15px; box-shadow: 0 2px 5px rgba(0,0,0,0.02);">';
-                    echo '<span class="ledoviz-turkish-exchange-rates-label" style="font-size: 1.1em; font-weight: bold; margin-bottom: 5px;">' . esc_html( strtoupper( $code ) ) . '</span>';
-                    echo '<div style="display: flex; align-items: center;">';
+                    echo '<div class="ledoviz-turkish-exchange-rates-item" style="' . esc_attr($item_style) . '">';
+                    echo '<span class="ledoviz-turkish-exchange-rates-label" style="' . esc_attr($label_style) . '">' . esc_html( strtoupper( $code ) ) . '</span>';
+                    echo '<div style="' . esc_attr($val_container_style) . '">';
                     echo '<span class="ledoviz-turkish-exchange-rates-val" style="font-size: 1.3em;">' . esc_html( $val ) . '</span>';
-                    echo $trend_html;
+                    echo wp_kses_post( $trend_html );
                     echo '</div>';
                     echo '</div>';
                 }

@@ -12,8 +12,8 @@ class HeaderTickerWidget extends \WP_Widget {
     public function __construct() {
         parent::__construct(
             'ledoviz_turkish_exchange_rates_header_ticker', // Base ID
-            esc_html__( 'El Doviz Header Ticker', 'ledoviz-turkish-exchange-rates' ), // Name
-            [ 'description' => esc_html__( 'Shows a scrolling ticker of exchange rates in the header.', 'ledoviz-turkish-exchange-rates' ) ]
+            esc_html__( 'El Doviz Header Ticker', 'el-doviz' ), // Name
+            [ 'description' => esc_html__( 'Shows a scrolling ticker of exchange rates in the header.', 'el-doviz' ) ]
         );
     }
 
@@ -26,7 +26,7 @@ class HeaderTickerWidget extends \WP_Widget {
         $fetcher = new \ElDoviz\Service\DataFetcher( new \ElDoviz\Service\CacheManager() );
         $rates   = $fetcher->fetch( 'tcmb', HOUR_IN_SECONDS );
         if ( is_wp_error( $rates ) ) {
-            echo '<p>' . esc_html__( 'Rates unavailable.', 'ledoviz-turkish-exchange-rates' ) . '</p>';
+            echo '<p>' . esc_html__( 'Rates unavailable.', 'el-doviz' ) . '</p>';
             echo wp_kses_post( $args['after_widget'] );
             return;
         }
@@ -55,7 +55,7 @@ class HeaderTickerWidget extends \WP_Widget {
         $currencies = ! empty( $instance['currencies'] ) ? $instance['currencies'] : 'usd,eur,gbp';
         ?>
         <p>
-            <label for="<?php echo esc_attr( $this->get_field_id( 'currencies' ) ); ?>"><?php esc_html_e( 'Currencies (comma separated)', 'ledoviz-turkish-exchange-rates' ); ?></label>
+            <label for="<?php echo esc_attr( $this->get_field_id( 'currencies' ) ); ?>"><?php esc_html_e( 'Currencies (comma separated)', 'el-doviz' ); ?></label>
             <input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'currencies' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'currencies' ) ); ?>" type="text" value="<?php echo esc_attr( $currencies ); ?>" />
         </p>
         <?php

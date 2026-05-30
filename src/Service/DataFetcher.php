@@ -44,7 +44,7 @@ class DataFetcher {
         }
 
         if ( empty( $this->endpoints[ $source ] ) ) {
-            return new \WP_Error( 'ledoviz_turkish_exchange_rates_invalid_source', esc_html__( 'Invalid data source.', 'ledoviz-turkish-exchange-rates' ) );
+            return new \WP_Error( 'ledoviz_turkish_exchange_rates_invalid_source', esc_html__( 'Invalid data source.', 'el-doviz' ) );
         }
 
         $response = wp_remote_get( $this->endpoints[ $source ], [ 'timeout' => 10 ] );
@@ -65,7 +65,7 @@ class DataFetcher {
                 $this->cache->set( $cache_key, $data, $ttl );
                 return $data;
             }
-            return new \WP_Error( 'ledoviz_turkish_exchange_rates_http_error', esc_html__( 'Unexpected HTTP response.', 'ledoviz-turkish-exchange-rates' ), $code );
+            return new \WP_Error( 'ledoviz_turkish_exchange_rates_http_error', esc_html__( 'Unexpected HTTP response.', 'el-doviz' ), $code );
         }
 
         $body = wp_remote_retrieve_body( $response );
@@ -97,7 +97,7 @@ class DataFetcher {
                 libxml_use_internal_errors( true );
                 $xml = simplexml_load_string( $raw );
                 if ( false === $xml ) {
-                    return new \WP_Error( 'ledoviz_turkish_exchange_rates_xml_error', esc_html__( 'Failed to parse TCMB XML.', 'ledoviz-turkish-exchange-rates' ) );
+                    return new \WP_Error( 'ledoviz_turkish_exchange_rates_xml_error', esc_html__( 'Failed to parse TCMB XML.', 'el-doviz' ) );
                 }
                 $rates = [];
                 foreach ( $xml->Currency as $currency ) {
@@ -110,7 +110,7 @@ class DataFetcher {
             case 'bist':
                 $json = json_decode( $raw, true );
                 if ( null === $json || ! isset( $json['data'] ) ) {
-                    return new \WP_Error( 'ledoviz_turkish_exchange_rates_json_error', esc_html__( 'Invalid BIST JSON.', 'ledoviz-turkish-exchange-rates' ) );
+                    return new \WP_Error( 'ledoviz_turkish_exchange_rates_json_error', esc_html__( 'Invalid BIST JSON.', 'el-doviz' ) );
                 }
                 // Try to find the BIST 100 price in Bigpara payload.
                 // Usually it returns a listing of items where we can find "BIST 100".
@@ -129,7 +129,7 @@ class DataFetcher {
                 return [ 'bist100' => $price ];
 
             default:
-                return new \WP_Error( 'ledoviz_turkish_exchange_rates_unknown_source', esc_html__( 'Unknown source for parsing.', 'ledoviz-turkish-exchange-rates' ) );
+                return new \WP_Error( 'ledoviz_turkish_exchange_rates_unknown_source', esc_html__( 'Unknown source for parsing.', 'el-doviz' ) );
         }
     }
 
